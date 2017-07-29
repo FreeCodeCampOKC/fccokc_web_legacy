@@ -1157,3 +1157,8 @@ pre .deletion {
     margin-bottom: 1em;
   }
 }
+
+.under_construction {
+    font-weight: bolder; 
+    font-size: 40px;
+}
