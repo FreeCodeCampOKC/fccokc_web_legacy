@@ -1250,3 +1250,9 @@ pre .deletion {
   cursor: pointer;
 }
 /* END OF PARKING IMAGE MODAL */
+
+img.slack-images {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
