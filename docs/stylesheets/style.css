@@ -1157,6 +1157,11 @@ pre .deletion {
     margin-bottom: 1em;
   }
 }
+.mobile-nav {
+  display: none;
+  height: auto;
+  z-index: 1;
+}
 
 .under_construction {
     font-weight: bolder;
