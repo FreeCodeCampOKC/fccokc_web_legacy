@@ -38,25 +38,14 @@
 <body>
     <div id="container">
         <div class="mobile-nav-panel">
-            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            <i class="icon-reorder icon-large"></i>
         </div>
         <header id="header">
-            <div class="mobile-nav-panel">
-                <nav class="nav mobile-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </nav>
-            </div>
             <h1 class="blog-title"><a href="index.html">Free Code Camp - OKC</a></h1>
             <nav class="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="about.html">About</a></li>
@@ -64,22 +53,40 @@
             </nav>
         </header>
         <div id="main">
-            <p class="under_construction">Under Construction</p>
+            <article class="post">
+                <div class="entry-content">
+                    <h2>Statewide</h2>
+                    <ul>
+                        <li><a href="https://www.meetup.com/Techlahoma-Foundation/" target="_blank" rel="external" title="Techlahoma Meetup">Techlahoma Foundation</a></li>
+                        <li><a href="https://www.facebook.com/groups/492652307741260/" target="_blank" rel="external" title="Texoma Coders">Texoma Coders</a></li>
+                        <li><a href="http://okwomenintech.org/" target="_blank" rel="external" title="Oklahoma Women in Tech">Oklahoma Women in Technology</a></li>
+                        <li><a href="https://www.meetup.com/Code-for-Muskogee/" target="_blank" rel="external" title="Code for Muskogee">Code for Muskogess</a></li>
+                        <li><a href="https://www.meetup.com/Techogee/" target="_blank" rel="external" title"Techogee">Techogee</a></li>
+                    </ul>
+                    <h2>Oklahoma City</h2>
+                    <ul>
+                        <li><a href="https://www.meetup.com/Code-for-OKC/" target="_blank" rel="external" title="Code for OKC">Code for OKC</a></li>
+                        <li><a href="https://www.meetup.com/Data-Creativity-OKC/" target="_blank" rel="external" title="Data Creativity">Data+Creativity OKC</a></li>
+                        <li><a href="https://www.meetup.com/CODE-Norman/" target="_blank" rel="external" title="CODE Norman">CODE Norman</a></li>
+                        <li><a href="https://www.meetup.com/shecodesokc/" target="_blank" rel="external" title="SheCodes OKC">SheCodes OKC</a></li>
+                        <li><a href="https://www.meetup.com/DSN-DEV-OKC/" target="_blank" rel="external" title="DSN+DEV+OKC">DSN+DEV+OKC</a></li>
+                        <li><a href="https://www.meetup.com/OKC-Sharp/" target="_blank" rel="external" title="OKC #">OKC C# Developers Group</a></li>
+                        <li><a href="https://www.meetup.com/OKC-js/" target="_blank" rel="external" title="OKC.js">OKC Javascript group</a></li>
+                    </ul>
+                    <h2>Tulsa</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/groups/free.code.camp.tulsa/" target="_blank" rel="external" title="FCC Tulsa">FreeCodeCamp - Tulsa</a></li>
+                        <li><a href="https://www.meetup.com/Code-for-Tulsa/" target="_blank" rel="external" title="Code for Tulsa">Code for Tulsa</a></li>
+                        <li><a href="https://www.meetup.com/TulsaJS/" target="_blank" rel="external" title="TulsaJS">Tulsa JavaScript</a></li>
+                        <li><a href="https://www.meetup.com/RHTTech-on-Tap/" target="_blank" rel="external" title="Tech On Tap">Tech on Tap - Tulsa</a></li>
+                        <li><a href="https://www.meetup.com/TulsaDevelopers-net/" target="_blank" rel="external" title="Tulsa .NET">Tulsa Developers .Net</a></li>
+                </div>   
+            </article>
         </div>
         <footer id="footer">
             <h1 class="footer-blog-title"><a href="index.html">Free Code Camp - OKC</a></h1>
             <span class="copyright">&copy; 2017 Free Code Camp - OKC &middot; <a href="https://www.techlahoma.org/code-of-conduct/" target="_blank" title="Code of Conduct" rel="external">Code of Conduct</a></span>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script>
-        $('i.fa-bars').click(function() {
-            if($('nav.mobile-nav').css('display') == 'block') {
-                $('nav.mobile-nav').slideUp();
-            } else {
-                $('nav.mobile-nav').slideDown();
-            }
-        })
-    </script>
 </body>
 </html>

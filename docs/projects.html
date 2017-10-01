@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Free Code Camp - OKC</title>
@@ -35,12 +36,24 @@
         ga('send', 'pageview');
     </script>
 </head>
+
 <body>
     <div id="container">
         <div class="mobile-nav-panel">
-            <i class="icon-reorder icon-large"></i>
+            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
         </div>
         <header id="header">
+            <div class="mobile-nav-panel">
+                    <nav class="nav mobile-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
             <h1 class="blog-title"><a href="index.html">Free Code Camp - OKC</a></h1>
             <nav class="nav">
                 <ul>
@@ -53,12 +66,59 @@
             </nav>
         </header>
         <div id="main">
-            <p class="under_construction">Under Construction</p>
+            <article class="post">
+                <header class="entry-header">
+                    <h1 class="article-title entry-title">Projects</h1>
+                </header>
+                <div class="entry-content">
+                    <p>You can view a complete list of projects here: <a href="https://github.com/FreeCodeCampOKC" target="_blank" rel="external">https://github.com/FreeCodeCampOKC</a>.</p>
+                    <p>Here are a few ongoing projects you can check out and start participating in</p>
+                    <h3 id="fcc-okc-web">FreeCodeCamp Oklahoma City Website</h3>
+                    <p>
+                        <strong>Status:</strong> Development<br>
+                        <strong>Source:</strong> <a href="https://github.com/FreeCodeCampOKC/fccokc_web" target="_blank" rel="external">https://github.com/FreeCodeCampOKC/fccokc_web</a><br>
+                        <strong>Project Lead:</strong><a href="https://github.com/dashcraft" target="_blank" rel="external"> Daniel Ashcraft</a> and <a href="https://github.com/CarsonMckinstry" target="_blank" rel="external">Carson McKinstry</a>
+                    </p>
+                    <p>Static Website cloned from codeforokc for the Oklahoma City branch of Free Code Camp <a href="http://www.fccokc.com/" target="_blank" rel="external">http://www.fccokc.com/</a></p>
+                    <h3 id="example-portfolio">Example Portfolio</h3>
+                    <p>
+                        <strong>Status:</strong> Development<br>
+                        <strong>Source:</strong> <a href="https://github.com/FreeCodeCampOKC/examplePortfolio" target="_blank" rel="external">https://github.com/FreeCodeCampOKC/examplePortfolio</a><br>
+                        <strong>Project Lead:</strong><a href="https://github.com/dashcraft" target="_blank" rel="external"> Daniel Ashcraft</a>
+                    </p>
+                    <p>An Example Portfolio utilizing GitHub.</p>
+                    <h3 id="angular-app">Angular App</h3>
+                    <p>
+                        <strong>Status:</strong> Development<br>
+                        <strong>Source:</strong> <a href="https://github.com/FreeCodeCampOKC/AngularApp" target="_blank" rel="external">https://github.com/FreeCodeCampOKC/AngularApp</a><br>
+                        <strong>Project Lead:</strong><a href="https://github.com/dashcraft" target="_blank" rel="external"> Daniel Ashcraft</a>
+                    </p>
+                    <p>Developing an AngularJS application for a community project with Free Code Camp OKC</p>
+                    <h3 id="twitch-slack-bot">Twitch Slack Bot</h3>
+                    <p>
+                        <strong>Status:</strong> Production<br>
+                        <strong>Source:</strong> <a href="https://github.com/FreeCodeCampOKC/twitch_slack_bot" target="_blank" rel="external">https://github.com/FreeCodeCampOKC/twitch_slack_bot</a><br>
+                        <strong>Project Lead:</strong><a href="https://github.com/dashcraft" target="_blank" rel="external"> Daniel Ashcraft</a> and <a href="https://github.com/jackwkinsey" target="_blank" rel="external"> Jack Kinsey</a>
+                    </p>
+                    <p>A bot that posts twitch and slack chats bidirectionally.</p>
+                </div>
+            </article>
         </div>
         <footer id="footer">
             <h1 class="footer-blog-title"><a href="index.html">Free Code Camp - OKC</a></h1>
             <span class="copyright">&copy; 2017 Free Code Camp - OKC &middot; <a href="https://www.techlahoma.org/code-of-conduct/" target="_blank" title="Code of Conduct" rel="external">Code of Conduct</a></span>
         </footer>
-    </div>
+    </div>    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+            $('i.fa-bars').click(function() {
+                if($('nav.mobile-nav').css('display') == 'block') {
+                    $('nav.mobile-nav').slideUp();
+                } else {
+                    $('nav.mobile-nav').slideDown();
+                }
+            })
+        </script>
 </body>
+
 </html>
