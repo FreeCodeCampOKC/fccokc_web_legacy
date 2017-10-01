@@ -35,6 +35,14 @@
         ga('create', 'UA-66877432-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <style>
+        .entry-content th{
+            font-weight: bold;
+        }
+        .entry-content td, .entry-content th{
+            padding: 5px 7px;
+        }
+    </style>
 </head>
 
 <body>
@@ -73,6 +81,76 @@
                 <div class="entry-content">
                     <p>This page is geared towards newcomers who may need help setting up their development environment for the first time.</p>
                     <p>A basic development environment typically includes an interpreter or compiler for the language that you are coding in, a terminal or terminal emulator for running command line scripts, a text or code editor, and, if you are writing web software, a web browser.</p>
+                    <hr>
+
+                    <!-- INSTALLING NODE -->
+                    <h3 id="node-js">Installing NodeJS and NPM</h3>
+                    <p>NodeJS is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. A lot of developer tooling is based on Node and several FCC tutorials use it as well. NPM is a package manager for NodeJS packages and comes bundled with the Node installer.</p>
+
+                    <h5>Installing NodeJS on Windows and macOS</h5>
+                    <p>The easiest way to install Node on Windows and macOS is by downloading and running the installer from their website.</p>
+                    <p><a href="https://nodejs.org/en/download" target="_blank">Click Here to go to the download page</a></p>
+                    <p>Select and download the installer that applies to your system architecture. Once the download completes, run the installer and follow the prompts. NPM also comes bundled with the installer by default.</p>
+
+                    <h5>Installing NodeJS on Linux</h5>
+                    <p>The easiest way to install the most current, stable release of NodeJS on most Linux distros is by using the systems package manager. To install Node on Linux, find your distibution in the table below, copy the command in the right column, open a terminal, paste in the command, and press enter. If your distibution is not listed, <a href="https://nodejs.org/en/download/package-manager/">refer to the install page on NodeJS.org</a></p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distro</th>
+                                <th>Command</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Debian / Ubuntu</td>
+                                <td><pre style="padding:5px">sudo apt-get install -y nodejs</pre></td>
+                            </tr>
+                            <tr>
+                                <td>RHEL, CentOS, Fedora</td>
+                                <td>
+                                    <pre style="padding:5px;">curl --silent --location https://rpm.nodesource.com/setup_6.x | sudo bash -</pre>
+                                    Then run: <pre style="padding:5px">sudo yum install -y nodejs</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+
+                    <!-- INSTALLING A TERMINAL -->
+                    <h3 id="teminal">Installing a terminal</h3>
+                    <p>Most operating systems come with a terminal or terminal emulator installed by default. Refer to the table below for instrcuctions on launching a terminal window on your OS.</p>
+
+                    <table style="margin-bottom:15px;">
+                        <thead>
+                            <tr>
+                                <th>OS</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Windows</td>
+                                <td>Press the windows key, type "command prompt", click the black terminal icon. Alternatively, search for "powershell", it's icon is blue.</td>
+                            </tr>
+                            <tr>
+                                <td>macOS</td>
+                                <td>Press Command Key + Spacebar, type "terminal", click the terminal icon</td>
+                            </tr>
+                            <tr>
+                                <td>Debian/Ubuntu</td>
+                                <td>Press Ctrl+Alt+T</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Not all terminals are created equally. Some may lack certain features. Here are some links to alternative terminal applications if you would like to try them out:</p>
+                    <ul>
+                        <li>Windows - <a href="http://cmder.net/">Cmdr</a></li>
+                        <li>macOS - <a href="https://iterm2.com/downloads.html">iTerm2</a></li>
+                        <li>Linux - <a href="https://launchpad.net/terminator">Terminator</a></li>
+                    </ul>
+                    <hr>
                 </div>
             </article>
         </div>
