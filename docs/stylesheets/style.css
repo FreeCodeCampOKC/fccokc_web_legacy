@@ -1254,6 +1254,21 @@ pre .deletion {
   text-decoration: none;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1040px) {
+  .meet-wrapper {
+    display: block;
+  }
+  .meet-image {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .meet-image {
+    max-width: 85%;
+  }
+}
 /* END OF PARKING IMAGE MODAL */
 
 img.slack-images {
