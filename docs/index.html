@@ -18,6 +18,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./stylesheets/style.css" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map" type="text/css">
     <script>
@@ -76,12 +77,8 @@
                     <div class="meet-wrapper">
                         <p class="meet-element">We meet up every Sunday afternoon in person at <a href="https://www.starspace46.com/" target="_blank" title="StarSpace46" rel="external">StarSpace46</a> and on <a href="https://www.twitch.tv/techlahoma" target="_blank" title="Techlahoma Twitch" rel="external">Twitch</a> in order to supplement the online learning with in-person guidance and instruction. We do our best to keep you up to date and moving forward in your career as web/software developers!<br> Please see our <a href="http://www.meetup.com/FreeCodeCampOKC" target="_blank" title="Meetup FCC OKC" rel="external">Meetup Page</a> for additional times and details, and to RSVP to let us know that you’re coming.<br><br> You can also learn more <a href="about.html">about</a> Free Code Camp - OKC and check out our <a href="blog.html">blog</a> page for instructional and inspiring articles written by our members.</p>
                         <div class="meet-image">
-                            <img id="parkImg" src="images/parking.png" alt="Parking at StarSpace46">
+                            <img id="parkImg" src="images/parking.png" alt="Parking at StarSpace46" data-toggle="modal" data-target="#modal-parking">
                             <h6>Parking at StarSpace46</h6>
-                            <div id="parkModal" class="modal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="fullPark" src="images/fullPark.png">
-                            </div>
                         </div>
                     </div>
                     <h2 id="github">Projects</h2>
@@ -98,8 +95,29 @@
             <span class="copyright">&copy; 2017 Free Code Camp - OKC &middot; <a href="https://www.techlahoma.org/code-of-conduct/" target="_blank" title="Code of Conduct" rel="external">Code of Conduct</a></span>
         </footer>
     </div>
+
+    <!-- PARKING MODAL -->
+    <div class="modal fade" id="modal-parking" tabindex="-1" role="dialog" aria-labelledby="modal-parking" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" aria-label="close">&times;</button>
+                    <h4 class="modal-title" id="modal-parking-title">Parking at StarSpace46</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5"><img src="images/parking.png" alt="Parking at StarSpace46" class="center-block img-responsive modal-img"></div>
+                        <div class="col-md-7 modal-text">
+                            Parking is available 24/7 on the south side of Sheridan Ave in the large lot catty-corner across the street.<br><br> You are at risk of being ticketed or towed if you park directly in front of the SS46 building Monday thru Friday between 7:30AM and 4:00PM.<br><br> You are allowed to park in front of the SS46 building on weekends or after 4:00PM during the week.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="script/modal.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
         $('i.fa-bars').click(function() {
             if($('nav.mobile-nav').css('display') == 'block') {
