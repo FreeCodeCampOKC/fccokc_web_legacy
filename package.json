@@ -1,0 +1,25 @@
+{
+  "name": "fccokc-web",
+  "version": "1.0.0",
+  "description": "Static Website cloned from codeforokc, for the Oklahoma City branch of Free Code Camp.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "node validateHtml.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeCodeCampOKC/fccokc_web"
+  },
+  "author": "see README.md",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FreeCodeCampOKC/fccokc_web/issues"
+  },
+  "homepage": "https://github.com/FreeCodeCampOKC/fccokc_web#readme",
+  "devDependencies": {
+    "html-validator": "^2.2.3"
+  }
+}
