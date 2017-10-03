@@ -3,8 +3,19 @@ const fs = require("fs");
 
 const testFolder = "./docs/";
 
+const ignores = [
+  "Error: Bad value “true” for attribute “allowfullscreen” on element “iframe”.",
+  "Error: The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.",
+  "Error: The “scrolling” attribute on the “iframe” element is obsolete. Use CSS instead.",
+  "Error: Bad value “true” for attribute “allowfullscreen” on element “iframe”.",
+  "Error: The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.",
+  "Error: The “scrolling” attribute on the “iframe” element is obsolete. Use CSS instead.",
+  "Warning: Article lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all articles."
+];
+
 var options = {
-  format: "text"
+  format: "text",
+  ignore: ignores
 };
 
 fs.readdir(testFolder, (err, files) => {
