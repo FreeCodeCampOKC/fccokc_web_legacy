@@ -40,17 +40,27 @@
 <body>
     <div id="container">
         <div class="mobile-nav-panel">
-            <i class="icon-reorder icon-large"></i>
+            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
         </div>
         <header id="header">
-            <h1 class="blog-title"><a href="#">Free Code Camp - OKC</a></h1>
+            <div class="mobile-nav-panel">
+                <nav class="nav mobile-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="blog-title"><a href="index.html">Free Code Camp - OKC</a></h1>
             <nav class="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="resources.html">Resources</a></li>
-                    <li><a href="twitch.html">Twitch</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
@@ -73,7 +83,7 @@
                     <p>Code of Conduct</p>
                     <a href="https://api.slack.com/docs/community-code-of-conduct"> Slack Code of Conduct </a>
                     <p>Learn more about Techlahoma's Slack </p>
-                    <a href="https://www.techlahoma.org/spaces"> https://www.techlahoma.org/spaces</a>
+                    <a href=" https://www.techlahoma.org/spaces"> https://www.techlahoma.org/spaces</a>
                     <h2> You can also download Slack Apps </h2>
                     <p>Download Slack Apps for Android and iOS </p>
                     <a href="https://slack.com/downloads/android"> Download For Android</a>
@@ -86,6 +96,16 @@
             <span class="copyright">&copy; 2017 Free Code Camp - OKC &middot; <a href="https://www.techlahoma.org/code-of-conduct/" target="_blank" title="Code of Conduct" rel="external">Code of Conduct</a></span>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        $('i.fa-bars').click(function() {
+            if($('nav.mobile-nav').css('display') == 'block') {
+                $('nav.mobile-nav').slideUp();
+            } else {
+                $('nav.mobile-nav').slideDown();
+            }
+        })
+    </script>
 </body>
 
 </html>
