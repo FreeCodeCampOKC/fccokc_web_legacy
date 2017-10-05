@@ -1,19 +1,9 @@
 $(document).ready(function() {
-    var modal = $('#parking-modal');
-    var trigger = $('#parking-modal-trigger');
-    var span = $('#close');
+    const trigger = $('#parking-image-trigger');
+    const modal = $('#parking-modal');
+    const close = $('#close');
 
-    trigger.click(function() {
-        modal.style.display = "block";
-    });
+    trigger.click( () => modal.css({'display': 'block'}));
 
-    span.click(function() {
-        modal.style.display = "none";
-    });
-
-    window.click(function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    });
+    close.click( () => modal.css({'display': 'none'}));
 });
