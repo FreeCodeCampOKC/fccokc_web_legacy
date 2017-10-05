@@ -10,10 +10,6 @@ You can view the website [here](http://www.fccokc.com/).
 | [Daniel Ashcraft](https://github.com/dashcraft)                              | Co-organizer |
 | [Kimberly Collins](https://github.com/kacollins)                             | Co-organizer |
 | [Carson McKinstry](https://github.com/CarsonMckinstry)                       | Co-organizer |
-| [Jennifer Gladney](https://www.meetup.com/FreeCodeCampOKC/members/13307798/) | Co-organizer |
-| [Ava Pipher](https://twitter.com/avasond)                                    | Volunteer    |
-| [Brent Shambaugh](https://twitter.com/Brent_Shambaugh)                       | Volunteer    |
-| [Bryan Rigsby](https://github.com/bryanrigsby)                               | Contributor  |
 | [Matt Stubenhofer](https://github.com/mstub)                                 | Contributor  |
 | [Jason Carpenter](https://github.com/Jason9199)                              | Contributor  |
 
