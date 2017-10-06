@@ -15,7 +15,8 @@ You can view the website [here](http://www.fccokc.com/).
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/FreeCodeCampOKC/fccokc_web/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md]
+(https://github.com/FreeCodeCampOKC/fccokc_web/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Code of Conduct
 
