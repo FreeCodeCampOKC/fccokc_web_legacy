@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Free Code Camp - OKC</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Free Code Camp - OKC is a group for those who want to learn to code in the Oklahoma City area.  We meet at StarSpace46 every Sunday.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Code Camp - OKC">
+    <meta property="og:url" content="http://freecodecampokc.org/">
+    <meta property="og:site_name" content="Free Code Camp - OKC">
+    <meta property="og:description" content="Free Code Camp - OKC is a group for those who want to learn to code in the Oklahoma City area.  We meet at StarSpace46 every Sunday.">
+    <meta property="og:updated_time" content="2017-03-08T09:45:28.000Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FreeCodeCampOKC">
+    <meta name="twitter:description" content="Free Code Camp - OKC is a group for those who want to learn to code in the Oklahoma City area.  We meet at StarSpace46 every Sunday.">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheets/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map" type="text/css">
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-66877432-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <style>
+        .entry-content th{
+            font-weight: bold;
+        }
+        .entry-content td, .entry-content th{
+            padding: 5px 7px;
+        }
+        .entry-content td:first-child{
+            min-width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <span class="mobile-nav-panel">
+            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        </span>
+        <header id="header">
+            <div class="mobile-nav-panel">
+                <nav class="nav mobile-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="twitch.html">Twitch</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="blog-title"><a href="#">Free Code Camp - OKC</a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="main">
+            <article class="post">
+                <header class="entry-header">
+                    <h1 class="article-title entry-title">Setting Up a Basic Development Environment</h1>
+                </header>
+                <div class="entry-content">
+                    <p>This page is geared towards newcomers who may need help setting up their development environment for the first time.</p>
+                    <p>A basic development environment typically includes an interpreter or compiler for the language that you are coding in, a terminal or terminal emulator for running command line scripts, a text or code editor, and, if you are writing web software, a web browser.</p>
+                    <hr>
+
+                    <!-- INSTALLING NODE -->
+                    <h3 id="node-js">Installing NodeJS and NPM</h3>
+                    <p>NodeJS is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. A lot of developer tooling is based on Node and several FCC tutorials use it as well. NPM is a package manager for NodeJS packages and comes bundled with the Node installer.</p>
+
+                    <h5>Installing NodeJS on Windows and macOS</h5>
+                    <p>The easiest way to install Node on Windows and macOS is by downloading and running the installer from their website.</p>
+                    <p><a href="https://nodejs.org/en/download" target="_blank">Click Here to go to the download page</a></p>
+                    <p>Select and download the installer that applies to your system architecture. Once the download completes, run the installer and follow the prompts. NPM also comes bundled with the installer by default.</p>
+
+                    <h5>Installing NodeJS on Linux</h5>
+                    <p>The easiest way to install the most current, stable release of NodeJS on most Linux distros is by using the systems package manager. To install Node on Linux, find your distibution in the table below, copy the command in the right column, open a terminal, paste in the command, and press enter. If your distibution is not listed, <a href="https://nodejs.org/en/download/package-manager/" target="_blank">refer to the install page on NodeJS.org</a></p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distro</th>
+                                <th>Command</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Debian / Ubuntu</td>
+                                <td><pre style="padding:5px">sudo apt-get install -y nodejs</pre></td>
+                            </tr>
+                            <tr>
+                                <td>RHEL, CentOS, Fedora</td>
+                                <td>
+                                    <pre style="padding:5px;">curl --silent --location https://rpm.nodesource.com/setup_6.x | sudo bash -</pre>
+                                    Then run: <pre style="padding:5px">sudo yum install -y nodejs</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+
+                    <!-- INSTALLING A TERMINAL -->
+                    <h3 id="teminal">Installing a terminal</h3>
+                    <p>Most operating systems come with a terminal or terminal emulator installed by default. Refer to the table below for instrcuctions on launching a terminal window on your OS.</p>
+
+                    <table style="margin-bottom:15px;">
+                        <thead>
+                            <tr>
+                                <th>OS</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Windows</td>
+                                <td>Press the windows key, type "command prompt", click the black terminal icon. Alternatively, search for "powershell", it's icon is blue.</td>
+                            </tr>
+                            <tr>
+                                <td>macOS</td>
+                                <td>Press Command Key + Spacebar, type "terminal", click the terminal icon</td>
+                            </tr>
+                            <tr>
+                                <td>Debian/Ubuntu</td>
+                                <td>Press Ctrl+Alt+T</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Not all terminals are created equally. Some may lack certain features. Here are some links to alternative terminal applications if you would like to try them out:</p>
+                    <ul>
+                        <li>Windows - <a href="http://cmder.net/" target="_blank">Cmder</a></li>
+                        <li>macOS - <a href="https://iterm2.com/downloads.html" target="_blank">iTerm2</a></li>
+                        <li>Linux - <a href="https://launchpad.net/terminator" target="_blank">Terminator</a></li>
+                    </ul>
+                    <hr>
+
+                    <!-- Installing a Code Editor -->
+                    <h3 id="code-editor">Installing a Text or Code Editor</h3>
+                    <p>A code editor is what you will use to write software. Code editors provide a ton of features that are useful to developers that aren't present in regular text editors. These features include things like syntax highlighting, code linting and formatting, git integration, and many, many others.</p>
+                    <p>There are tons of great code editors out there. A few of the more popular editors include Visual Studio Code (VS Code), Sublime Text, and Atom.</p>
+
+                    <h5>Visual Studio Code (VS Code)</h5>
+                    <p>VS Code is a free code editor from Microsoft. Notable features include IntelliSense, advanced debugging, and git integration.</p>
+                    <p>To install VS Code on Windows, macOS, and Linux (Debian/Ubuntu, RHEL/Fedora/SUSE), download and run the installer from the <a href="https://code.visualstudio.com/Download" target="_blank">Downloads page</a>.</p>
+
+                    <h5>Sublime Text</h5>
+                    <p>Sublime text is a code editor built primarily in C++ and supports plugins written in Python. Notable features include Multi-Edit, Go-To Symbol, excellent performance, and a mature plugin environment.</p>
+                    <p>To install Sublime Text on macOS and Windows, download and run the installer from the <a href="https://www.sublimetext.com/3" target="_blank">downloads page</a>.</p>
+                    <p>To install Sublime Text on your Linux machine, go to the <a href="https://www.sublimetext.com/docs/3/linux_repositories.html" target="_blank">Linux Package Manager Repositories page</a> and locate and follow the instructions per your installed package manager.</p>
+
+                    <h5>Atom</h5>
+                    <p>Atom is an open source code editor from GitHub built on Electron. Notable features include open source, GitHub Desktop integration, huge amount of packages and themes available, and easy to extend.</p>
+                    <p>To install Atom on Windows, macOS, and most flavors of Linux, visit <a href="https://atom.io/" target="_blank">atom.io</a> and click on the download button. Once the download completes, run the installer.</p>
+                    <hr>
+
+                    <!-- Installing a Web Browser -->
+                    <h3 id="web-browser">Installing a Web Browser</h3>
+                    <p>In order to run and test much of the web code you will write, you are going to need a <em>modern</em> web browser. Chrome and Firefox are currently the most popular browsers that will run the most up to date standards of JavaScript.</p>
+
+                    <h5>Installing Chrome</h5>
+                    <p>To install Chrome on Windows, macOS, and most flavors of Linux, visit the <a href="https://google.com/chrome" target="_blank">Chrome homepage</a>, locate and click the blue Download button. Once the download completes, run the installer and follow the prompts.</p>
+
+                    <h5>Installing Firefox</h5>
+                    <p>To install Firefox on Windows, macOS, and most flavors of Linux, visit the <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Download page</a>, locate and click the green Download button. Once complete, run the installer and follow the prompts.</p>
+                    
+                    <h5>Using Web Browser's Developer Tools</h5>
+                    <p>Today's modern web browsers are more powerfull than ever. Not only will they display your HTML and run your JavaScript, but they come bundled with powerful developer tools. These tools allow you to debug your JavaScript, inspect your HTML elements, and get your CSS just right all in the browser.
+                       Vist <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools" target="_blank">MDN web docs</a> to learn how to get the most out of your web browser.</p>
+                    
+                    <p>For more information about Chrome DevTools vist <a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome DevTools</a></p>
+                    <p>And a similar page for whats available in Firefox can be found <a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Here.</a></p>
+                    <hr>
+
+                    <!-- Wrap Up -->
+                    <p>You now have all the basic pieces of software you need to start writing slick websites and web applications.</p>
+                    <p>Happy Coding!</p>
+                </div>
+            </article>
+        </div>
+        <footer id="footer">
+            <h1 class="footer-blog-title"><a href="#">Free Code Camp - OKC</a></h1>
+            <span class="copyright">&copy; 2017 Free Code Camp - OKC &middot; <a href="https://www.techlahoma.org/code-of-conduct/" target="_blank" title="Code of Conduct" rel="external">Code of Conduct</a></span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="script/modal.js"></script>
+    <script>
+        $('i.fa-bars').click(function() {
+            if($('nav.mobile-nav').css('display') == 'block') {
+                $('nav.mobile-nav').slideUp();
+            } else {
+                $('nav.mobile-nav').slideDown();
+            }
+        })
+    </script>
+</body>
+
+</html>

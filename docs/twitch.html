@@ -18,7 +18,6 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./stylesheets/style.css" type="text/css">
-    <link rel="stylesheet" href="./stylesheets/modal.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map" type="text/css">
     <script>
@@ -40,18 +39,18 @@
 
 <body>
     <div id="container">
-        <span class="mobile-nav-panel">
+        <div class="mobile-nav-panel">
             <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-        </span>
+        </div>
         <header id="header">
             <div class="mobile-nav-panel">
                 <nav class="nav mobile-nav">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="resources.html">Resources</a></li>
-                        <li><a href="twitch.html">Twitch</a></li>
+                        <li><a href="#">Twitch</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </nav>
@@ -59,11 +58,11 @@
             <h1 class="blog-title"><a href="#">Free Code Camp - OKC</a></h1>
             <nav class="nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="resources.html">Resources</a></li>
-                    <li><a href="twitch.html">Twitch</a></li>
+                    <li><a href="#">Twitch</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
@@ -71,24 +70,30 @@
         <div id="main">
             <article class="post">
                 <header class="entry-header">
-                    <h1 class="article-title entry-title">Join Us</h1>
+                    Techlahoma Twitch Live Stream
                 </header>
                 <div class="entry-content">
-                    <p>Free Code Camp - OKC is a group for those who want to learn to code in the Oklahoma City area.</p>
-                    <h2 id="meetings">Meetings</h2>
-                    <div class="meet-wrapper">
-                        <p class="meet-element">We meet up every Sunday afternoon in person at <a href="https://www.starspace46.com/" target="_blank" title="StarSpace46" rel="external">StarSpace46</a> and on <a href="https://www.twitch.tv/techlahoma" target="_blank" title="Techlahoma Twitch" rel="external">Twitch</a> in order to supplement the online learning with in-person guidance and instruction. We do our best to keep you up to date and moving forward in your career as web/software developers!<br> Please see our <a href="http://www.meetup.com/FreeCodeCampOKC" target="_blank" title="Meetup FCC OKC" rel="external">Meetup Page</a> for additional times and details, and to RSVP to let us know that you’re coming.<br><br> You can also learn more <a href="about.html">about</a> Free Code Camp - OKC and check out our <a href="blog.html">blog</a> page for instructional and inspiring articles written by our members.</p>
-                        <div class="meet-image">
-                            <img src="images/parking.png" alt="Parking at StarSpace46" id="parking-image-trigger">
-                            <h6>Parking at StarSpace46</h6>
-                        </div>
-                    </div>
-                    <h2 id="github">Projects</h2>
-                    <p>Check out some of the <a href="projects.html">projects</a> we have been working on.</p>
-                    <h2 id="chat">Chat</h2>
-                    <p>We also have a <a href="http://slack.techlahoma.org" target="_blank" title="FCC OKC Slack" rel="external">Slack</a>&nbsp;<a href="slack.html"><sup><i class="fa fa-question-circle-o" style="color: black" aria-hidden="true" title="What is Slack?"></i></sup></a> room where we can have real-time discussions and offer help and advice when needed.</p>
-                    <h2 id="code-of-conduct">Code of Conduct</h2>
-                    <p>Our <a href="https://www.techlahoma.org/code-of-conduct/" target="_blank" title="Code of Conduct" rel="external">Code of Conduct &amp; Anti-Harassment Policy</a> details the expectations that we have for all contributors. We value your participation and hope that by communicating these expectations widely we can all enjoy a harassment-free environment.</p>
+                    <iframe
+                        src="http://player.twitch.tv/?channel=techlahoma&autoplay=true"
+                        height="500"
+                        width="835"
+                        frameborder="0"
+                        scrolling=no
+                        allowfullscreen=true>
+                    </iframe>
+                </div>
+                <header class="entry-header">
+                    FCCOKC Videos From Previous Meetups
+                </header>
+                <div class="entry-content">
+                    <iframe
+                        src="http://player.twitch.tv/?collection=CM5o_BPq4xTl7w&autoplay=false"
+                        height="500"
+                        width="835"
+                        frameborder="0"
+                        scrolling=no
+                        allowfullscreen=true>
+                    </iframe>
                 </div>
             </article>
         </div>
@@ -97,23 +102,7 @@
             <span class="copyright">&copy; 2017 Free Code Camp - OKC &middot; <a href="https://www.techlahoma.org/code-of-conduct/" target="_blank" title="Code of Conduct" rel="external">Code of Conduct</a></span>
         </footer>
     </div>
-
-    <!-- PARKING MODAL -->
-    <div id="parking-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="modal-title">Parking at StarSpace 46</span>
-                <span id="close" class="close">x</span>
-            </div>
-            <div class"modal-body">
-                <img src="images/parking.png" alt="Parking at StarSpace46" class="modal-image"/>
-                <div class="modal-text">Parking is available 24/7 on the south side of Sheridan Ave in the large lot catty-corner across the street.<br><br> You are at risk of being ticketed or towed if you park directly in front of the SS46 building Monday thru Friday between 7:30AM and 4:00PM.<br><br> You are allowed to park in front of the SS46 building on weekends or after 4:00PM during the week.</div>
-            </div>
-        </div>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="./scripts/modal.js"></script>
     <script>
         $('i.fa-bars').click(function() {
             if($('nav.mobile-nav').css('display') == 'block') {

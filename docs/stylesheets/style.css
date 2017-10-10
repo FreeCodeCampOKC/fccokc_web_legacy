@@ -1191,76 +1191,18 @@ pre .deletion {
   -ms-grid-column: 3;
   -ms-grid-row: 1;
 }
-/* END MEETINGS WRAPPER */
 
-/* BEGIN PARKING IMAGE MODAL */
-#parkImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#parkImg:hover {
-  opacity: 0.7;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  background-color: rgba(0,0,0,0.7);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 70%;
-  max-width: 700px;
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform:sacel(1)}
-}
-
-@keyframes zoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #F1F1F1;
-  font-size: 30px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-/* END OF PARKING IMAGE MODAL */
+@media only screen and (max-width: 650px) {
+  .meet-image {
+    max-width: 85%;
+  }
 
 img.slack-images {
   margin: 0;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+/* END MEETINGS WRAPPER */
 
 /* Social Icon Styling */
 .social-wrapper {
