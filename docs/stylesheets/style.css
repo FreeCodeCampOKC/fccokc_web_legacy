@@ -836,6 +836,9 @@ pre .deletion {
 #article-nav:after {
   clear: both;
 }
+.social-wrapper a{
+  color: black;
+}
 @media screen and (min-width: 768px) {
   #article-nav {
     margin: 6em 0 50px 0;
