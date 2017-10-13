@@ -4,9 +4,9 @@
 
 ### Outline the Issue
 <!-- Please select all that apply, by placing an 'x' in the appropriate box -->
-- [] Is the issue a bug?
-- [] Is the issue a typo?
-- [] Is the issue a proposed new feature?
+- [ ] Is the issue a bug?
+- [ ] Is the issue a typo?
+- [ ] Is the issue a proposed new feature?
 
 ### Describe the Issue
 <!-- If describing a bug, please outline what is currently happening -->
