@@ -1,3 +1,4 @@
+![Techlahoma](http://www.fccokc.com/images/techlahoma.png)
 # Techlahoma Foundation Code of Conduct
 
 ## What to Expect From Techlahoma Regarding Our Code of Conduct and Anti-Harassment Policy
