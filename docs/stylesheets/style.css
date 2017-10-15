@@ -1243,3 +1243,17 @@ img.slack-images {
   color: #dd4b39;
   text-shadow: 0px 16px 10px rgba(221, 75, 57, 0.3);
 }
+
+/* Inilne code highlighting */
+
+.inline-code {
+    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+    font-size: 1em;
+
+    background-color: #ededed;
+    color: #DD4B39;
+    padding: 2px 5px;
+    position: relative;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+}
