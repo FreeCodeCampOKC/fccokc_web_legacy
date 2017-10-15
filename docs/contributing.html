@@ -74,23 +74,33 @@
                 </header>
                 <div class="entry-content">
                     <p>This guide will help you to get started contributing with git and GitHub.</p>
-                    <p>To get your code merged into a repository, you must fork the repository to your own GitHub account, clone your fork, commit and push your changes, and finally send a pull request to the maintainer(s) of the original repository. If your code is acceptable to the project maintainer(s), it will be merged in.</p>
+                    <p>To get your code merged into a repository (repo), you must fork the repo to your own GitHub account, create a local clone of your fork, commit and push your changes, and, finally, send a pull request to the maintainer(s) of the original repo. If your code is acceptable to the project maintainer(s), it will be merged in.</p>
 
                     <hr>
 
                     <h2>Forking a Repository</h2>
-                    <p>To create a fork of a repository, visit the repository's page on GitHub and click the fork button. This will create a copy of the repository on your GitHub account that you can then clone a local copy of.</p>
+                    <p>A fork is a copy of a repo. Creating a fork will allow you to make changes to the repo's codebase without affecting the original repo.</p>
+                    <p>To create a fork, visit the repo's page on GitHub and click the fork button.</p>
                     <img src="images/fork-button.jpg" alt="GitHub fork button">
-                    <p>After clicking the fork button, you will have a copy of the original repository on your own GitHub account.</p>
+                    <p>This will create a forked copy of the repo on your GitHub account that you can then clone a local copy of. As a fork, your repo will always have a link to the original.</p>
                     <img src="images/your-fork.jpg" alt="Your fork">
-                    <p>As a fork, your repository will always have a link to the original repository.</p>
 
                     <hr>
 
                     <h2>Cloning Your Fork</h2>
                     <p>After clicking the fork button, navigate to <span style="text-decoration:underline;font-weight:600;">your fork</span> on your GitHub account and click the Clone/Download button. Copy the URL to your clipboard.</p>
                     <img src="images/clone-button.jpg" alt="Clone button">
-                    <p>This URL will follow a pattern similar to the following: <span class="inline-code">https://github.com/&lt;YOUR_USERNAME&gt;/&lt;REPOSITORY_NAME&gt;.git</span>.</p>
+                    <p>This URL will follow a pattern similar to the following:<br><span class="inline-code">https://github.com/&lt;YOUR_USERNAME&gt;/&lt;REPOSITORY_NAME&gt;.git</span>.</p>
+                    <p>
+                        On your local machine, open a terminal and change directory to the folder where you want to create your local copy of the repo (typically inside a folder called GitHub). Once in the correct directory, type the following code into your terminal:<br />
+                        <span class="inline-code">git clone &lt;URL from clipboard&gt;</span>
+                    </p>
+                    <p>This will create a local copy of your forked repo.</p>
+
+                    <hr>
+
+                    <h2>Making and Committing Chagnes</h2>
+                    <p>Now that you have a local copy of your forked repo, you can open up your code editor and begin making changes. Any changes made to files in this folder (include file changes, deletions, and additions) will be tracked by git.</p>
                 </div>
             </article>
         </div>
