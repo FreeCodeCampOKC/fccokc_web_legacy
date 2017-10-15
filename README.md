@@ -19,7 +19,7 @@ Please read [CONTRIBUTING.md](https://github.com/FreeCodeCampOKC/fccokc_web/blob
 
 ## Code of Conduct
 
-Our [Code of Conduct & Anti-Harassment Policy](https://www.techlahoma.org/code-of-conduct/) details the expectations that we have for all contributors.
+Our [CODE_OF_CONDUCT.md](https://github.com/FreeCodeCampOKC/fccokc_web/blob/master/CODE_OF_CONDUCT.md) details the expectations that we have for all contributors.
 We value your participation and hope that by communicating these expectations widely we can all enjoy a harassment-free environment.
 
 ## Acknowledgments
