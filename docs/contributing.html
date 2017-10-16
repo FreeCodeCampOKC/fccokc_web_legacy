@@ -73,11 +73,14 @@
                     <h1 class="article-title entry-title">Contributing Guide</h1>
                 </header>
                 <div class="entry-content">
+                    <!-- INTRO -->
                     <p>This guide will help you to get started contributing with git and GitHub.</p>
                     <p>To get your code merged into a GitHub repository (repo), you must fork the repo to your own GitHub account, create a local clone of your fork, commit and push your changes, and, finally, send a pull request to the maintainer(s) of the original repo. If your code is acceptable to the project maintainer(s), it will be merged in.</p>
                     <p>Note: All text within and including angle brackets <span class="inline-code">&lt;PLACEHOLDER_TEXT&gt;</span> is placeholder text and should be replaced before running.</p>
+
                     <hr>
 
+                    <!-- CREATE A FORK -->
                     <h2>Forking a Repository</h2>
                     <p>A fork is a copy of a repo. Creating a fork will allow you to make changes to the repo's codebase without affecting the original repo.</p>
                     <p>To create a fork, visit the repo's page on GitHub and click the fork button.</p>
@@ -87,6 +90,7 @@
 
                     <hr>
 
+                    <!-- CLONE A FORK -->
                     <h2>Cloning Your Fork</h2>
                     <p>After clicking the fork button, navigate to <span style="text-decoration:underline;font-weight:600;">your fork</span> on your GitHub account and click the Clone/Download button. Copy the URL to your clipboard.</p>
                     <img src="images/clone-button.jpg" alt="Clone button">
@@ -99,6 +103,7 @@
 
                     <hr>
 
+                    <!-- ADD AN UPSTREAM -->
                     <h2>Configure an Upstream</h2>
                     <p>Configuring an upstream is useful for keeping your local repository up to date with the original. It is especially useful if you intend to make contributions over an extended period of time to a repository of which you are not an owner or maintainer by simplifying the process of merging changes from the upstream repo into your forked repo.</p>
                     <p>Note that an upstream should refer to the original repo, not your forked version of it. Also, there is nothing special about the name upstream, this can be (almost) any name you wish. However, the convention is to use the name upstream for references to the original repository from which your fork was created.</p>
@@ -108,10 +113,13 @@
 
                     <hr>
 
+                    <!-- FETCH/MERGE FROM UPSTREAM -->
                     <h2>Merge Changes from Upstream</h2>
                     <p>Once you have added an upstream remote, you can fetch the latest changes on it with the following:</p>
                     <p><span class="inline-code">git fetch upstream</span></p>
                     <p>This will fetch all changes on all branches from the upstream repo. Note that this does not actually pull these changes into your local repo.</p>
+                    <p>You can also fetch changes only on a specific branch like so:</p>
+                    <p><span class="inline-code">git fetch upstream &lt;BRANCH_NAME&gt;</span></p>
                     <p>In order to merge these changes in to your local repository, make sure you have checked out the local branch that you would like to merge the upstream changes into, then use the git merge command. Note that you should specify which branch on the upstream you wish to merge into your currently checked out local branch.</p>
                     <p><span class="inline-code">git merge upstream/master</span></p>
                     <h3>Alternative Merging Techniques</h3>
@@ -123,11 +131,24 @@
                         <br>
                         <span class="inline-code">git merge upstream/&lt;CURRENT_BRANCH&gt;</span>
                     </p>
+                    <p>Note that by using git pull, git will not give you any opportunity to review changes before they are merged in. Unless you are sure that you want to bring in all changes from the upstream repo, the fetch/merge technique should be preferred.</p>
 
+                    <hr>
+
+                    <!-- BRANCHING -->
                     <h2>Creating a Branch</h2>
                     <p>Now that you have cloned a local copy of your forked repo, you should create a new branch where you will make your changes.</p>
                     <p>Creating a branch to implement a feature or fix a bug is strongly encouraged because it allows you to experiment without making permanant changes to production codebases.</p>
+                    <p>To create a new branch, use the git branch command:</p>
+                    <p><span class="inline-code">git branch &lt;BRANCH_NAME&gt;</span></p>
+                    <p>After creating the new branch, you can switch to it with git checkout:</p>
+                    <p><span class="inline-code">git checkout &lt;BRANCH_NAME&gt;</span></p>
+                    <p>You can also do this all in a single command like so:</p>
+                    <p><span class="inline-code">git checkout -b &lt;BRANCH_NAME&gt;</span></p>
 
+                    <hr>
+
+                    <!-- ADD/COMMIT -->
                     <h2>Making and Committing Changes</h2>
                     <p>After creating and checking out a new branch, you can open up your code editor and begin making changes. Any changes made to files in this folder (including file changes, deletions, and additions) will be tracked by git.</p>
                     <p>Once you have made changes to a file or files, you have to "commit" those changes to the repo. Before you can make a commit, you must "add" the changed file(s) to staging.</p>
