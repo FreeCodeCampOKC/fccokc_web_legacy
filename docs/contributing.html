@@ -100,11 +100,29 @@
                     <hr>
 
                     <h2>Configure an Upstream</h2>
-                    <p>Configuring an upstream is useful for keeping your local repository up to date with the original.</p>
+                    <p>Configuring an upstream is useful for keeping your local repository up to date with the original. It is especially useful if you intend to make contributions over an extended period of time to a repository of which you are not an owner or maintainer by simplifying the process of merging changes from the upstream repo into your forked repo.</p>
                     <p>Note that an upstream should refer to the original repo, not your forked version of it. Also, there is nothing special about the name upstream, this can be (almost) any name you wish. However, the convention is to use the name upstream for references to the original repository from which your fork was created.</p>
                     <p>Navigate to the original repository's page on GitHub, click the Clone/Download button, and copy the URL to your clipboard.</p>
                     <p>Use the git remote add command to add a remote reference called upstream:</p>
                     <p><span class="inline-code">git remote add upstream &lt;URL_FROM_CLIPBOARD&gt;</span></p>
+
+                    <hr>
+
+                    <h2>Merge Changes from Upstream</h2>
+                    <p>Once you have added an upstream remote, you can fetch the latest changes on it with the following:</p>
+                    <p><span class="inline-code">git fetch upstream</span></p>
+                    <p>This will fetch all changes on all branches from the upstream repo. Note that this does not actually pull these changes into your local repo.</p>
+                    <p>In order to merge these changes in to your local repository, make sure you have checked out the local branch that you would like to merge the upstream changes into, then use the git merge command. Note that you should specify which branch on the upstream you wish to merge into your currently checked out local branch.</p>
+                    <p><span class="inline-code">git merge upstream/master</span></p>
+                    <h3>Alternative Merging Techniques</h3>
+                    <p>Alternatively, you can bring in changes from the upstream repo in a single command with the following:</p>
+                    <p><span class="inline-code">git pull upstream</span></p>
+                    <p>The above is roughly equivalent to the following:</p>
+                    <p>
+                        <span class="inline-code">git fetch upstream</span>
+                        <br>
+                        <span class="inline-code">git merge upstream/&lt;CURRENT_BRANCH&gt;</span>
+                    </p>
 
                     <h2>Creating a Branch</h2>
                     <p>Now that you have cloned a local copy of your forked repo, you should create a new branch where you will make your changes.</p>
