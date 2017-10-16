@@ -75,7 +75,7 @@
                 <div class="entry-content">
                     <p>This guide will help you to get started contributing with git and GitHub.</p>
                     <p>To get your code merged into a GitHub repository (repo), you must fork the repo to your own GitHub account, create a local clone of your fork, commit and push your changes, and, finally, send a pull request to the maintainer(s) of the original repo. If your code is acceptable to the project maintainer(s), it will be merged in.</p>
-
+                    <p>Note: In this guide, all text within and including angle brackets <span class="inline-code">&lt;PLACEHOLDER_TEXT&gt;</span> is placeholder text and should be replaced before running.</p>
                     <hr>
 
                     <h2>Forking a Repository</h2>
@@ -93,21 +93,25 @@
                     <p>This URL will follow a pattern similar to the following:<br><span class="inline-code">https://github.com/&lt;YOUR_USERNAME&gt;/&lt;REPOSITORY_NAME&gt;.git</span>.</p>
                     <p>
                         On your local machine, open a terminal and change directory to the folder where you want to create your local copy of the repo (typically inside a folder called GitHub). Once in the correct directory, type the following code into your terminal and press enter:<br />
-                        <span class="inline-code">git clone &lt;URL from clipboard&gt;</span>
+                        <span class="inline-code">git clone &lt;URL_FROM_CLIPBOARD&gt;</span>
                     </p>
                     <p>This will create a local copy of your forked repo.</p>
 
                     <hr>
 
                     <h2>Configure an Upstream</h2>
-                    <p>Configuring an upstream is useful for keeping your local repository up to date with the original repository. Note that an upstream should refer to the original repository, not your forked version of it.</p>
+                    <p>Configuring an upstream is useful for keeping your local repository up to date with the original.</p>
+                    <p>Note that an upstream should refer to the original repo, not your forked version of it. Also, there is nothing special about the name upstream, this can be (almost) any name you wish, such as original. However, the convention is to use the name upstream for references to the original repository from which your fork was created.</p>
+                    <p>Navigate to the repository's page on GitHub, click the Clone/Download button, and copy the URL to your clipboard.</p>
+                    <p>Use the git remote add command to add an upstream:</p>
+                    <p><span class="inline-code">git remote add upstream &lt;URL_FROM_CLIPBOARD&gt;</span></p>
 
                     <h2>Creating a Branch</h2>
-                    <p>Now that you have cloned local copy of your forked repo, you should create a new branch where you will make your changes.</p>
+                    <p>Now that you have cloned a local copy of your forked repo, you should create a new branch where you will make your changes.</p>
                     <p>Creating a branch to implement a feature or fix a bug is strongly encouraged because it allows you to experiment without making permanant changes to production codebases.</p>
 
                     <h2>Making and Committing Changes</h2>
-                    <p>Now that you have a local copy of your forked repo, you can open up your code editor and begin making changes. Any changes made to files in this folder (including file changes, deletions, and additions) will be tracked by git.</p>
+                    <p>After creating and checking out a new branch, you can open up your code editor and begin making changes. Any changes made to files in this folder (including file changes, deletions, and additions) will be tracked by git.</p>
                     <p>Once you have made changes to a file or files, you have to "commit" those changes to the repo. Before you can make a commit, you must "add" the changed file(s) to staging.</p>
                     <p>Use the add command to add changed files/directories to staging:</p>
                     <p><span class="inline-code">git add &lt;FILENAME OR DIRECTORY&gt;</span></p>
