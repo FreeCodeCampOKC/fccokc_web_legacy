@@ -108,7 +108,7 @@
                     <p>Configuring an upstream is useful for keeping your local repository up to date with the original. It is especially useful if you intend to make contributions over an extended period of time to a repository of which you are not an owner or maintainer by simplifying the process of merging changes from the upstream repo into your forked repo.</p>
                     <p>Note that an upstream should refer to the original repo, not your forked version of it. Also, there is nothing special about the name upstream, this can be (almost) any name you wish. However, the convention is to use the name upstream for references to the original repository from which your fork was created.</p>
                     <p>Navigate to the original repository's page on GitHub, click the Clone/Download button, and copy the URL to your clipboard.</p>
-                    <p>Use the git remote add command to add a remote reference called upstream:</p>
+                    <p>Use the git remote command to add a remote reference called upstream:</p>
                     <p><span class="inline-code">git remote add upstream &lt;URL_FROM_CLIPBOARD&gt;</span></p>
 
                     <hr>
@@ -153,10 +153,14 @@
                     <p>After creating and checking out a new branch, you can open up your code editor and begin making changes. Any changes made to files in this folder (including file changes, deletions, and additions) will be tracked by git.</p>
                     <p>Once you have made changes to a file or files, you have to "commit" those changes to the repo. Before you can make a commit, you must "add" the changed file(s) to staging.</p>
                     <p>Use the add command to add changed files/directories to staging:</p>
-                    <p><span class="inline-code">git add &lt;FILENAME OR DIRECTORY&gt;</span></p>
+                    <p><span class="inline-code">git add &lt;FILENAME_OR_DIRECTORY&gt;</span></p>
                     <p>Be sure that any changed files or directories that you add to staging are relevant to a single thing. For example, you don't want to fix several bugs, or add several new features, in a single commit because it will be more difficult to roll back, or undo, that commit later. Making small, frequent commits also allows you to make your commit messages concise and specific, which makes it easier for others to understand what the intended result of any single commit is.</p>
                     <p>Once you have added your changes to staging, it's time to commit those changes to the repo:</p>
-                    <p><span class="inline-code">git commit -m "&lt;YOUR COMMIT MESSAGE&gt;"</span></p>
+                    <p><span class="inline-code">git commit -m "&lt;YOUR_COMMIT_MESSAGE&gt;"</span></p>
+                    <p>You can also bypass the staging process entirely:</p>
+                    <p><span class="inline-code">git commit -a -m "&lt;YOUR_COMMIT_MESSAGE&gt;"</span></p>
+                    <p>The above will automatically add changed files to staging before committing. Note that this will not add newly created or deleted files.</p>
+
                 </div>
             </article>
         </div>
