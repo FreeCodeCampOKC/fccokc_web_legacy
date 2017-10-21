@@ -70,15 +70,15 @@
         <div id="main">
             <article class="post">
                 <div class="entry-content">
-                    <input id="toggle-youtube" class="toggle-box" type="checkbox" checked><label for="toggle-youtube"><h2>Resources from Free Code Camp OKC</h2></label>
-                    <div id="youtube-list">
+                    <input id="toggle-youtube" class="toggle-box" type="checkbox" checked><label for="toggle-youtube"><h2 min-icon='&#xf054;' max-icon='&#xf078;'>Resources from Free Code Camp OKC</h2></label>
+                    <div id="youtube-list" class="toggle-div show-section">
                         <ul>
                             <li><a href="https://www.youtube.com/watch?v=2fJkaSrMAOs&list=PLdW0ayjzW_LC3r4TIg08APaJlgtI9t8BH" target="_blank" title="YoutubePlaylist" rel="external"> Free Code Camp OKC Youtube Playlist</a> - A collection of videos from our meetings.</li>
                             <li><a href="environment-setup.html">Setting up a development environment</a> - A guide to setting up a basic development environment geared towards beginners.</li>
                         </ul>
                     </div>
-                    <input id="toggle-resources" class="toggle-box" type="checkbox" checked><label for="toggle-resources"><h2>Resources</h2></label>
-                    <div id="resources-list">
+                    <input id="toggle-resources" class="toggle-box" type="checkbox" checked><label for="toggle-resources"><h2 min-icon='&#xf054;' max-icon='&#xf078;'>Resources</h2></label>
+                    <div id="resources-list" class="toggle-div show-section">
                         <ul>
                             <li><a href="https://developer.mozilla.org/en-US/" target="_blank" title="MDN" rel="external">Mozilla Developer Network</a> - Web Technologies Documentation.</li>
                             <li><a href="https://www.w3schools.com/" target="_blank" title="W3Schools" rel="external">W3Schools</a> - Library of tutorials for varying front-end development technologies.</li>
@@ -89,8 +89,8 @@
                             <li><a href="http://www.javascripter.net/faq/rgbtohex.htm" target="_blank" title="Hex-to-RGB Converter" rel="external">Hex-to-RGB Converter</a> - A handy webpage where you can easily convert from RGB values to hexadecimal values for colors.</li>
                         </ul>
                     </div>
-                    <input id="toggle-tutorials" class="toggle-box" type="checkbox" checked><label for="toggle-tutorials"><h2>Tutorials & Courses</h2></label>
-                    <div id="tutorials-list">
+                    <input id="toggle-tutorials" class="toggle-box" type="checkbox" checked><label for="toggle-tutorials"><h2 min-icon='&#xf054;' max-icon='&#xf078;'>Tutorials & Courses</h2></label>
+                    <div id="tutorials-list" class="toggle-div show-section">
                         <ul>
                             <li><a href="https://www.udemy.com/the-complete-javascript-course/" target="_blank" title="Complete JavaScript Course" rel="external">Complete JavaScript Course</a> by Jonas Schmedtmann - Tutorial for JS Fundamentals & DOM Traversal.</li>
                             <li><a href="https://www.sololearn.com/" target="_blank" title="SoloLearn" rel="external">SoloLearn</a> - Offers fundamental tutorials on plenty of programming languages!</li>
@@ -103,8 +103,8 @@
                             <li><a href="http://codecombat.com" target="_blank" title="CodeCombat" rel="external">CodeCombat</a> - Gamified set of Python, JS or Lua tutorials in a freemium model. Many levels and challenges available without a paid subscription.</li>
                         </ul>
                     </div>
-                    <input id="toggle-books" class="toggle-box" type="checkbox" checked><label for="toggle-books"><h2>Books</h2></label>
-                    <div id="books-list">
+                    <input id="toggle-books" class="toggle-box" type="checkbox" checked><label for="toggle-books"><h2 min-icon='&#xf054;' max-icon='&#xf078;'>Books</h2></label>
+                    <div id="books-list" class="toggle-div show-section">
                         <ul>
                             <li><a href="http://eloquentjavascript.net/" target="_blank" title="Eloquent JS" rel="external">Eloquent JS</a> - Some tout Eloquent JS to be the be-all-end-all reference for Vanilla JS</li>
                             <li><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank" title="You Don't Know JS" rel="external">You Don't Know JS</a> - A series of learning fundamental JavaScript published by <a href="https://github.com/getify" target="_blank" title="Kyle Simpson Github" rel="external">Kyle Simpson</a></li>
@@ -127,7 +127,11 @@
             } else {
                 $('nav.mobile-nav').slideDown();
             }
-        })
+        });
+
+        $('.toggle-box').click(function(){
+            $(this).nextAll('.toggle-div:first').toggleClass('hide-section').toggleClass('show-section');
+        });
     </script>
 </body>
 
