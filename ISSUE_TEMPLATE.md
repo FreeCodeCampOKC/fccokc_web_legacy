@@ -2,11 +2,12 @@
 <!-- Provide a general summary of the issue in the Title above -->
 <!-- Below is a list of items we ask you include with your issue -->
 
-### Outline the Issue
-<!-- Please select all that apply, by placing an 'x' in the appropriate box -->
+### What is the Issue?
+<!-- Please select all that apply, by removing the whitespace and placing an 'x' in the appropriate box -->
 - [ ] Is the issue a bug?
 - [ ] Is the issue a typo?
 - [ ] Is the issue a proposed new feature?
+- [ ] Is the issue an enhancement?
 
 ### Describe the Issue
 <!-- If describing a bug, please outline what is currently happening -->
@@ -18,6 +19,22 @@
 ### Possible Solution
 <!-- This section is not required, but suggested -->
 <!-- Give us your thoughts on the issue, and how we can resolve it -->
+
+
+### Would this be a good first issue?
+<!-- Please select the appropriate box by removing the whitespace and placing an 'x' in it -->
+- [ ] Yes
+- [ ] No
+
+### What is the difficulty level of this issue?
+<!-- Please select the appropriate box by removing the whitespace and placing an 'x' in it -->
+- [ ] Beginner
+- [ ] Intermediate
+- [ ] Advanced
+- [ ] Unknown
+
+### Do you plan to work on the Issue?
+<!-- Let us know if you want to work on the issue or not, we love the contributions! -->
 
 
 ### Mentions
