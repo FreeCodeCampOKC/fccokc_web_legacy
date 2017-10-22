@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Free Code Camp - OKC</title>
@@ -36,7 +35,6 @@
         ga('send', 'pageview');
     </script>
 </head>
-
 <body>
     <div id="container">
         <div class="mobile-nav-panel">
@@ -50,6 +48,7 @@
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="#">Resources</a></li>
+                        <li><a href="twitch.html">Twitch</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </nav>
@@ -69,12 +68,15 @@
         <div id="main">
             <article class="post">
                 <div class="entry-content">
-				<h2 id="Youtube"> Resources from Free Code Camp OKC </h2>
-						<ul>
-							<li><a href="https://www.youtube.com/watch?v=2fJkaSrMAOs&list=PLdW0ayjzW_LC3r4TIg08APaJlgtI9t8BH" target="_blank" title="YoutubePlaylist" rel="external"> Free Code Camp OKC Youtube Playlist</a> - A collection of videos from our meetings.</li>
+                    <input id="toggle-youtube" class="toggle-box" type="checkbox" checked><label for="toggle-youtube"><h2 min-icon='&#xf054;' max-icon='&#xf078;'>Resources from Free Code Camp OKC</h2></label>
+                    <div id="youtube-list" class="toggle-div show-section">
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=2fJkaSrMAOs&list=PLdW0ayjzW_LC3r4TIg08APaJlgtI9t8BH" target="_blank" title="YoutubePlaylist" rel="external"> Free Code Camp OKC Youtube Playlist</a> - A collection of videos from our meetings.</li>
                             <li><a href="environment-setup.html">Setting up a development environment</a> - A guide to setting up a basic development environment geared towards beginners.</li>
                         </ul>
-                    <h2 id="resources">Resources</h2>
+                    </div>
+                    <input id="toggle-resources" class="toggle-box" type="checkbox" checked><label for="toggle-resources"><h2 min-icon='&#xf054;' max-icon='&#xf078;'>Resources</h2></label>
+                    <div id="resources-list" class="toggle-div show-section">
                         <ul>
                             <li><a href="https://developer.mozilla.org/en-US/" target="_blank" title="MDN" rel="external">Mozilla Developer Network</a> - Web Technologies Documentation.</li>
                             <li><a href="https://www.w3schools.com/" target="_blank" title="W3Schools" rel="external">W3Schools</a> - Library of tutorials for varying front-end development technologies.</li>
@@ -82,24 +84,33 @@
                             <li><a href="https://devdocs.io/" target="_blank" title="DevDocs.io" rel="external">DevDocs.io</a> - Collaborative Library of API Documentation</li>
                             <li><a href="https://www.youtube.com/user/shiffman" target="_blank" title="Coding Train" rel="external">Coding Train</a> - Creative Coding Videos of Great Breadth by <a href="http://shiffman.net" target="_blank" title="danielshiffman" rel="external">Daniel Shiffman</a></li>
                             <li><a href="https://git-scm.com/" target="_blank" title="Git-SCM" rel="external">Git SCM</a> - All about Git with links to a community, a pro book, and more </li>
-			    <li><a href="http://www.javascripter.net/faq/rgbtohex.htm" target="_blank" title="Hex-to-RGB Converter" rel="external">Hex-to-RGB Converter</a> - A handy webpage where you can easily convert from RGB values to hexadecimal values for colors.</li>
+                            <li><a href="http://www.javascripter.net/faq/rgbtohex.htm" target="_blank" title="Hex-to-RGB Converter" rel="external">Hex-to-RGB Converter</a> - A handy webpage where you can easily convert from RGB values to hexadecimal values for colors.</li>
+                            <li><a href="http://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2012/06/HTML-Cheatsheet-Skillcrush.pdf" target="_blank" title="HTML Cheatsheet" rel="external">HTML Cheatsheet</a> - Helpful single page list of HTML tags with descriptions.</li>
+
                         </ul>
-                    <h2 id="tutorials">Tutorials & Courses</h2>
+                    </div>
+                    <input id="toggle-tutorials" class="toggle-box" type="checkbox" checked><label for="toggle-tutorials"><h2 min-icon='&#xf054;' max-icon='&#xf078;'>Tutorials & Courses</h2></label>
+                    <div id="tutorials-list" class="toggle-div show-section">
                         <ul>
-                            <li><a href="https://www.udemy.com/the-complete-javascript-course/" target="_blank" title="Complete JavaScript Course" rel="external">Complete JavaScript Course</a> by Jonas Schmedtmann - Tutorial for JS Fundamentals & DOM Traversal.
+                            <li><a href="https://www.udemy.com/the-complete-javascript-course/" target="_blank" title="Complete JavaScript Course" rel="external">Complete JavaScript Course</a> by Jonas Schmedtmann - Tutorial for JS Fundamentals & DOM Traversal.</li>
                             <li><a href="https://www.sololearn.com/" target="_blank" title="SoloLearn" rel="external">SoloLearn</a> - Offers fundamental tutorials on plenty of programming languages!</li>
                             <li><a href="https://www.udemy.com/courses/development/" target="_blank" title="Udemy" rel="external">Udemy</a> - Vast library of resources for every programming language & topic you could imagine.</li>
                             <li><a href="http://codekata.com" target="_blank" title="CodeKata" rel="external">CodeKata</a> - Offers katas or challenges to practice JavaScript</li>
-                            <li><a href="https://www.codewars.com" target="_blank" title="CodeWars" rel="external">CodeWars</a> - Complete and compete on programming challenges in multiple languages</li>
+                            <li><a href="https://www.codewars.com" target="_blank" title="CodeWars" rel="external">CodeWars</a> - Compete in programming challenges in multiple languages</li>
                             <li><a href="https://javascript30.com" target="_blank" title="JavaScript30" rel="external">JavaScript30</a> - 30 day Vanilla JS coding challenge</li>
                             <li><a href="https://try.github.io" target="_blank" title="TryGitTutorial" rel="external">Try Git Tutorial</a> - Try Git on the Web</li>
                             <li><a href="https://www.lynda.com" target="_blank" title="Lynda" rel="external">Lynda</a> - Offers courses and video tutorials for a variety of programming languages. Often available free through a local library.</li>
+                            <li><a href="http://codecombat.com" target="_blank" title="CodeCombat" rel="external">CodeCombat</a> - Gamified set of Python, JS or Lua tutorials in a freemium model. Many levels and challenges available without a paid subscription.</li>
                         </ul>
-                    <h2 id="books">Books</h2>
+                    </div>
+                    <input id="toggle-books" class="toggle-box" type="checkbox" checked><label for="toggle-books"><h2 min-icon='&#xf054;' max-icon='&#xf078;'>Books</h2></label>
+                    <div id="books-list" class="toggle-div show-section">
                         <ul>
                             <li><a href="http://eloquentjavascript.net/" target="_blank" title="Eloquent JS" rel="external">Eloquent JS</a> - Some tout Eloquent JS to be the be-all-end-all reference for Vanilla JS</li>
                             <li><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank" title="You Don't Know JS" rel="external">You Don't Know JS</a> - A series of learning fundamental JavaScript published by <a href="https://github.com/getify" target="_blank" title="Kyle Simpson Github" rel="external">Kyle Simpson</a></li>
+                            <li><a href="http://www.packtpub.com/packt/offers/free-learning" target="_blank" title="Packtpub Free Learning" rel="external">Packtpub Free Learning</a> - Every day one e-book is available for free. Requires free account.</li>
                         </ul>
+                    </div>
                 </div>
             </article>
         </div>
@@ -116,8 +127,10 @@
             } else {
                 $('nav.mobile-nav').slideDown();
             }
-        })
+        });
+        $('.toggle-box').click(function(){
+            $(this).nextAll('.toggle-div:first').toggleClass('hide-section').toggleClass('show-section');
+        });
     </script>
 </body>
-
 </html>
