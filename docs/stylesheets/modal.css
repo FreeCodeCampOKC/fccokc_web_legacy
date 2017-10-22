@@ -1,0 +1,139 @@
+.close {
+    color: white;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: blueviolet;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal {
+    z-index: 3;
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.8); 
+    padding-top: 30px;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    min-height: 30px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    display: flex;
+    align-content: center;
+    grid-gap: 10px;
+}
+
+.modal-image {
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.modal-text {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+.modal-content {
+    display: grid;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-title {
+    float: left;
+    font-size: 1.2rem;
+}
+
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+#parking-image-trigger {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#parking-image-trigger:hover {
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 950px) {
+    .modal-content {
+        width: 85%;
+        align-content: center;
+    }
+
+    .modal-body {
+        display: flex;
+        
+    }
+
+    .modal-image {
+        display: block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal-text {
+        display: block;
+        width: 90%;
+        align-self: center;
+        padding-left: 3%;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .modal-text {
+        font-size: 0.8rem;
+        word-wrap: normal;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .modal-image {
+        display: none;
+    }
+
+    .modal-title {
+        font-size: 1rem;
+    }
+}
