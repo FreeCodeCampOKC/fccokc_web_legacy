@@ -530,6 +530,73 @@ pre .deletion {
 .search-form-submit:focus {
   color: #777;
 }
+label h2 {
+  border-bottom: 1px solid #CCC;
+}
+.hide-section {
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+.show-section {
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  max-height: 1000px;
+  overflow: hidden;
+}
+.toggle-box {
+    display: none;
+    visibility: hidden;
+}
+#toggle-youtube + label h2::before {
+  content: attr(min-icon);
+  font-family: "FontAwesome";
+}
+#toggle-youtube:checked + label h2::before {
+  content: attr(max-icon);
+  font-family: "FontAwesome";
+}
+#toggle-resources + label h2::before {
+  content: attr(min-icon);
+  font-family: "FontAwesome";
+}
+#toggle-resources:checked + label h2::before {
+  content: attr(max-icon);
+  font-family: "FontAwesome";
+}
+#toggle-tutorials + label h2::before {
+  content: attr(min-icon);
+  font-family: "FontAwesome";
+}
+#toggle-tutorials:checked + label h2::before {
+  content: attr(max-icon);
+  font-family: "FontAwesome";
+}
+#toggle-books + label h2::before {
+  content: attr(min-icon);
+  font-family: "FontAwesome";
+}
+#toggle-books:checked + label h2::before {
+  content: attr(max-icon);
+  font-family: "FontAwesome";
+}
 #container {
   width: 840px;
   margin-left: auto;
@@ -1191,69 +1258,19 @@ pre .deletion {
   -ms-grid-column: 3;
   -ms-grid-row: 1;
 }
-/* END MEETINGS WRAPPER */
-
-/* BEGIN PARKING IMAGE MODAL */
-#parkImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#parkImg:hover {
-  opacity: 0.7;
-}
-
-.modal-content {
-  display: inline-block;
-}
-
-.modal-dialog {
-  width: 1000px;
-  max-width: 85%;
-  height: 900px;
-  max-height: 85%;
-}
-
-.modal-text {
-  font-variant: none;
-  font-size: 1.5rem;
-}
-
-.modal-thumb {
-  transition: all ease-in-out 150ms;    
-}
-
-.modal-thumb:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.modal-title {
-  font-size: 2.25rem;
-}
-
-@media only screen and (max-width: 1040px) {
-  .meet-wrapper {
-    display: block;
-  }
-  .meet-image {
-    max-width: 60%;
-  }
-}
 
 @media only screen and (max-width: 650px) {
   .meet-image {
     max-width: 85%;
   }
-  
-/* END OF PARKING IMAGE MODAL */
+}
 
 img.slack-images {
   margin: 0;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+/* END MEETINGS WRAPPER */
 
 /* Social Icon Styling */
 .social-wrapper {
