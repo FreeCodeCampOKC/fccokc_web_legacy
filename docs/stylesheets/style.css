@@ -530,6 +530,73 @@ pre .deletion {
 .search-form-submit:focus {
   color: #777;
 }
+label h2 {
+  border-bottom: 1px solid #CCC;
+}
+.hide-section {
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+.show-section {
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  max-height: 1000px;
+  overflow: hidden;
+}
+.toggle-box {
+    display: none;
+    visibility: hidden;
+}
+#toggle-youtube + label h2::before {
+  content: attr(min-icon);
+  font-family: "FontAwesome";
+}
+#toggle-youtube:checked + label h2::before {
+  content: attr(max-icon);
+  font-family: "FontAwesome";
+}
+#toggle-resources + label h2::before {
+  content: attr(min-icon);
+  font-family: "FontAwesome";
+}
+#toggle-resources:checked + label h2::before {
+  content: attr(max-icon);
+  font-family: "FontAwesome";
+}
+#toggle-tutorials + label h2::before {
+  content: attr(min-icon);
+  font-family: "FontAwesome";
+}
+#toggle-tutorials:checked + label h2::before {
+  content: attr(max-icon);
+  font-family: "FontAwesome";
+}
+#toggle-books + label h2::before {
+  content: attr(min-icon);
+  font-family: "FontAwesome";
+}
+#toggle-books:checked + label h2::before {
+  content: attr(max-icon);
+  font-family: "FontAwesome";
+}
 #container {
   width: 840px;
   margin-left: auto;

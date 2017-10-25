@@ -15,9 +15,8 @@ Resolves #
 ### Checklist
 <!-- Please make sure all items are checked before submitting a pull request -->
 <!-- Place a 'x' in the brackets to represent the item as done -->
-- [ ] I have read and understand the **CODE OF CONDUCT** as outlined
-- [ ] I have read the **CONTRIBUTING** document
-- [ ] I have validating my HTML as outlined in the **CONTRIBUTING** document
+- [ ] I have read and understand the <a href='https://github.com/FreeCodeCampOKC/fccokc_web/blob/master/CODE_OF_CONDUCT.md'>CODE OF CONDUCT</a> as outlined
+- [ ] I have read the <a href='https://github.com/FreeCodeCampOKC/fccokc_web/blob/master/CONTRIBUTING.md'>CONTRIBUTING</a> document
 - [ ] My repository is up to date, and merge conflicts have been resolved
 - [ ] This pull request relates to an open issue and has been tagged above
 
