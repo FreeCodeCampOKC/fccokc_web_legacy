@@ -161,6 +161,44 @@
                     <p><span class="inline-code">git commit -a -m "&lt;YOUR_COMMIT_MESSAGE&gt;"</span></p>
                     <p>The above will automatically add changed files to staging before committing. Note that this will not add newly created or deleted files.</p>
 
+                    <hr>
+
+                    <!-- Push to remote -->
+                    <h2>Pushing Changes to Remote Repos</h2>
+                    <p>Before you can issue a pull request to the upstream repository's maintainers, you have to push your local commits to your forked repo on GitHub.</p>
+                    <p>Use the git push command to push commits made on your local branch to your fork.</p>
+                    <p><span class="inline-code">git push &lt;REMOTE_NAME&gt; &lt;BRANCH_NAME&gt;</span></p>
+                    <p>
+                        Most commonly, the name of the remote that you will be pushing to will be called origin.
+                        If a branch name is not specified, git will attempt to push the current branch onto the remote branch of the same name but will error out if the remote branch does not exist.
+                        If a branch name is specified, git will update the remote branch or create it if it does not exist.
+                    </p>
+
+                    <hr>
+
+                    <!-- Create a PR -->
+                    <h2>Creating a Pull Request</h2>
+                    <p>You are now ready to issue a pull request from your newly published branch.</p>
+                    <p>To issue a pull request, go to <strong>your</strong> forked repository's page on github.com and click the "New Pull Request" button</p>
+                    <img src="images/pr-button.png" alt="Pull Request button" style="max-width:400px;"><br>
+                    <p>You may first want to switch branches to the branch you want the pull request applied from. By first switching branches, when creating a new pull request the correct head branch will already be selected for you.</p>
+                    <img src="images/pull-request.png" alt="Pull Request"><br>
+                    <p>When creating a pull request, the base branch is where the changes should be applied to and the head branch is where the changes should be applied from (IE your branch).</p>
+                    <p>After you have selected the appropriate base and head repos and branches, you need to create your commit messages.</p>
+                    <p>The first message is the title, it should be short and describe what the pull request should accomplish.</p>
+                    <p>The second message is where you should be more descriptive about the changes contained in the pull request. You can list files that have been updated, give more detail about what the changes should do, reference or close any issues related to the pull request, etc.</p>
+                    <p>Many project maintainers will include a template that describes the type of information they expect a pull request to contain before they will merge it in. If the repository conains a file called PULL_REQUEST_TEMPLATE, this will be used when creating new pull requests.</p>
+                    <p>After creating your commit messages, click the "Create Pull Request" button to finish creating the pull request.</p>
+                    <img src="images/create-pr.png" alt="Create Pull Request button" style="max-width:250px;">
+
+                    <hr>
+
+                    <!-- Cleaning Up -->
+                    <h2>Cleaning Up</h2>
+                    <p>If your pull request has been merged in or rejected by the upstream project's maintainers and you do not wish to keep it, you can delete branches with the git branch command.</p>
+                    <p><span class="inline-code">git branch -d &lt;BRANCH_NAME&gt;</span></p>
+                    <p>The above snippet will delete a branch as long as it has been merged in to another branch or error out otherwise. To force delete a branch use the <span class="inline-code">-D</span> flag instead.</p>
+
                 </div>
             </article>
         </div>
