@@ -1324,3 +1324,29 @@ img.slack-images {
     border: 1px solid #DDD;
     border-radius: 3px;
 }
+
+/* TL;DR Button */
+
+.tldr-btn{
+    padding: 5px 15px;
+    margin-bottom: 10px;
+
+    outline: none;
+    box-shadow: none;
+    border: 2px solid #33a6b8;
+    border-radius: 3px;
+    cursor: pointer;
+
+    color: #33a6b8;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    
+    background-color: #fff;
+
+    transition: all .4s ease-in-out;
+}
+.tldr-btn.active{
+    color: #fff;
+    background-color: #33a6b8;
+}
