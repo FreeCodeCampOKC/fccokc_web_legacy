@@ -73,6 +73,20 @@
                     <h1 class="article-title entry-title">Contributing Guide</h1>
                 </header>
                 <div class="entry-content">
+                    <!--
+                        ORDERED STEPS
+
+                        1. Create a Fork
+                        2. Clone your fork
+                        3. Setup Remotes (origin and upstream if not already set up)
+                        4. Stay up to date with upstream
+                        5. Branch
+                        6. Change / Commit
+                        7. Push
+                        8. PR
+                        9. Clean up
+                    -->
+
                     <!-- INTRO -->
                     <p>This guide is aimed at beginners who may be making their first contributions to open source or those who may need a refresh.</p>
                     <p>To get your code merged into a GitHub repository (repo), you should fork the repo to your own GitHub account, create a local clone of your fork, commit and push your changes, and, finally, send a pull request to the maintainer(s) of the original repo. If your code is acceptable to the project maintainer(s), it will be merged in.</p>
@@ -105,8 +119,17 @@
 
                     <!-- ADD AN UPSTREAM -->
                     <h2>Configure an Upstream</h2>
+                    <p>Upstream is the name conventionally used to refer to the original remote repository from which your fork was created.</p>
+                    <p>You can view all of your currently configured remotes for the current repo with <span class="inline-code">git remote -v</span></p>
+                    <p><pre>
+git remote -v
+
+origin      https://github.com/brycejech/fccokc_web.git (fetch)
+origin      https://github.com/brycejech/fccokc_web.git (push)
+upstream    https://github.com/FreeCodeCampOKC/fccokc_web.git (fetch)
+upstream    https://github.com/FreeCodeCampOKC/fccokc_web.git (push)</pre></p>
                     <p>Configuring an upstream is useful for keeping your local repository up to date with the original. It is especially useful if you intend to make contributions over an extended period of time to a repository of which you are not an owner or maintainer by simplifying the process of merging changes from the upstream repo into your forked repo.</p>
-                    <p>Note that an upstream should refer to the original repo, not your forked version of it. Also, there is nothing special about the name upstream, this can be (almost) any name you wish. However, the convention is to use the name upstream for references to the original repository from which your fork was created.</p>
+                    <p>Note that an upstream should refer to the original repo, not your forked version of it. Also, there is nothing special about the name upstream, this can be any name you wish. However, the convention is to use the name upstream for remote references to the original repository from which your fork was created.</p>
                     <p>Navigate to the original repository's page on GitHub, click the Clone/Download button, and copy the URL to your clipboard.</p>
                     <p>Use the git remote command to add a remote reference called upstream:</p>
                     <p><span class="inline-code">git remote add upstream &lt;URL_FROM_CLIPBOARD&gt;</span></p>
@@ -198,6 +221,8 @@
                     <p>If your pull request has been merged in or rejected by the upstream project's maintainers and you do not wish to keep it, you can delete branches with the git branch command.</p>
                     <p><span class="inline-code">git branch -d &lt;BRANCH_NAME&gt;</span></p>
                     <p>The above snippet will delete a branch as long as it has been merged in to another branch or error out otherwise. To force delete a branch use the <span class="inline-code">-D</span> flag instead.</p>
+                    <p>Remote branches can also be deleted with the <span class="inline-code">git push</span> command with the <span class="inline-code">-d</span> flag.</p>
+                    <p><span class="inline-code">git push -d &lt;REMOTE_NAME&gt; &lt;BRANCH_NAME&gt;</span></p>
 
                 </div>
             </article>
