@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Free Code Camp - OKC</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Free Code Camp - OKC is a group for those who want to learn to code in the Oklahoma City area.  We meet at StarSpace46 every Sunday.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Code Camp - OKC">
+    <meta property="og:url" content="http://freecodecampokc.org/">
+    <meta property="og:site_name" content="Free Code Camp - OKC">
+    <meta property="og:description" content="Free Code Camp - OKC is a group for those who want to learn to code in the Oklahoma City area.  We meet at StarSpace46 every Sunday.">
+    <meta property="og:updated_time" content="2017-03-08T09:45:28.000Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FreeCodeCampOKC">
+    <meta name="twitter:description" content="Free Code Camp - OKC is a group for those who want to learn to code in the Oklahoma City area.  We meet at StarSpace46 every Sunday.">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheets/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map" type="text/css">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-66877432-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="mobile-nav-panel">
+            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="mobile-nav-panel">
+            <nav class="nav mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="twitch.html">Twitch</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header id="header">
+            <h1 class="blog-title"><a href="index.html">Free Code Camp - OKC</a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="twitch.html">Twitch</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="main">
+            <article class="post">
+                <header class="entry-header">
+                    <h1 class="article-title entry-title">Contributing Guide</h1>
+                </header>
+                <div class="entry-content">
+                    <button class="tldr-btn" type="button" role="button">TL;DR</button>
+                    <!--
+                        ORDERED STEPS
+
+                        1. Create a Fork
+                        2. Clone your fork
+                        3. Setup Remotes (origin and upstream if not already set up)
+                        4. Stay up to date with upstream
+                        5. Branch
+                        6. Change / Commit
+                        7. Push
+                        8. PR
+                        9. Clean up
+                    -->
+
+                    <!-- INTRO -->
+                    <p class="tldr-content">This guide is aimed at beginners who may be making their first contributions to open source or those who may need a refresh.</p>
+                    <p>To get your code merged into a GitHub repository (repo), you should fork the repo to your own GitHub account, clone a local copy of your fork, commit and push your changes, and, finally, send a pull request to the maintainer(s) of the original repo. If your code is acceptable to the project maintainer(s), it will be merged in.</p>
+                    <p class="tldr-content">Note: All text within and including angle brackets <span class="inline-code">&lt;PLACEHOLDER_TEXT&gt;</span> is placeholder text and should be replaced before running.</p>
+
+                    <hr>
+
+                    <!-- CREATE A FORK -->
+                    <h2>Forking a Repository</h2>
+                    <p class="tldr-content">A fork is a copy of a repo. Creating a fork will allow you to make changes to the repo's codebase without affecting the original repo.</p>
+                    <p>To create a fork, visit the page of the repo you want to fork on GitHub and click the fork button.</p>
+                    <img src="images/fork-button.jpg" alt="GitHub fork button">
+                    <p class="tldr-content">This will create a forked copy of the repo on your GitHub account that you can then clone a local copy of. As a fork, your repo will always have a link to the original.</p>
+                    <img class="tldr-content" src="images/your-fork.jpg" alt="Your fork">
+
+                    <hr>
+
+                    <!-- CLONE A FORK -->
+                    <h2>Cloning Your Fork</h2>
+                    <p>After clicking the fork button, navigate to <span style="text-decoration:underline;font-weight:600;">your fork</span> on your GitHub account and click the Clone/Download button. Copy the URL to your clipboard.</p>
+                    <img src="images/clone-button.jpg" alt="Clone button">
+                    <p class="tldr-content">This URL will follow a pattern similar to the following:<br><span class="inline-code">https://github.com/&lt;YOUR_USERNAME&gt;/&lt;REPOSITORY_NAME&gt;.git</span>.</p>
+                    <p>
+                        On your local machine, open a terminal and navigate to the folder where you want to create your local copy of the repo (typically inside a folder called GitHub). Once in the correct directory, type the following code into your terminal and press enter:<br />
+                        <span class="inline-code">git clone &lt;URL_FROM_CLIPBOARD&gt;</span>
+                    </p>
+                    <p class="tldr-content">This will create a local copy of your forked repo.</p>
+                    <p>NOTE: After cloning your fork, be sure to change directory into the folder created by git in which the repository is located (typically named the same as the repo); otherwise, many of the following commands will not work.</p>
+
+                    <hr>
+
+                    <!-- Setup Remotes -->
+                    <h2>Setting Up Remotes</h2>
+                    <p>Remotes are references to remote repos that are stored out on the internet, such as GitHub.com, or the local network.</p>
+                    <p>You can view all of your currently configured remotes for the current repo with <span class="inline-code">git remote -v</span></p>
+
+                    <pre class="tldr-content">
+git remote -v
+
+origin      https://github.com/brycejech/fccokc_web.git (fetch)
+origin      https://github.com/brycejech/fccokc_web.git (push)
+upstream    https://github.com/FreeCodeCampOKC/fccokc_web.git (fetch)
+upstream    https://github.com/FreeCodeCampOKC/fccokc_web.git (push)</pre>
+
+                    <h3>Configure an Origin</h3>
+                    <p>When you clone a repository, git should automatically set up a remote called origin that points to the URL you cloned from. However, if no origin remote is set up, you can add it with the <span class="inline-code">git remote add</span> command:</p>
+                    <p><span class="inline-code">git remote add origin &lt;ORIGIN_URL&gt;</span></p>
+                    <p>In the above example, <span class="inline-code">&lt;ORIGIN_URL&gt;</span> should be the URL of your forked repo on your GitHub account.</p>
+                    <p class="tldr-content">Having an origin set up is important because this is where you will issue pull requests from. Because pull requests cannot be issued from the command line (without additional software), you will need to <span class="inline-code">push</span> your local commits to your origin repository on GitHub and issue pull requests from there.</p>
+
+                    <!-- Upstream -->
+                    <h3>Configure an Upstream</h3>
+                    <p class="tldr-content">Upstream is the remote name conventionally used to refer to the original repository from which your fork was created.</p>
+                    <p class="tldr-content">Configuring an upstream is useful for keeping your local repository up to date with the original. It is especially useful if you intend to make contributions over an extended period of time to a repository of which you are not an owner or maintainer by simplifying the process of merging changes from the upstream repo into your forked repo.</p>
+                    <p class="tldr-content">Note that upstream should refer to the original repo, not your forked version of it. Also, there is nothing special about the name upstream, this can be any name you wish. However, the convention is to use the name upstream for remote references to the original repository from which your fork was created.</p>
+                    <p>Navigate to the original repository's page on GitHub, click the Clone/Download button, and copy the URL to your clipboard.</p>
+                    <p>Use the <span class="inline-code">git remote add</span> command to add a remote reference called upstream:</p>
+                    <p><span class="inline-code">git remote add upstream &lt;URL_FROM_CLIPBOARD&gt;</span></p>
+
+                    <hr>
+
+
+                    <!-- FETCH/MERGE FROM UPSTREAM -->
+                    <h2>Fetch &amp; Merge Changes from Upstream</h2>
+                    <p>Once you have added an upstream, you can fetch the latest changes on it with the following:</p>
+                    <p><span class="inline-code">git fetch upstream</span></p>
+                    <p class="tldr-content">This will fetch all changes on all branches from the upstream repo. Note that this does not actually merge these changes into your local repo.</p>
+                    <p>You can also fetch changes only on a specific branch like so:</p>
+                    <p><span class="inline-code">git fetch upstream &lt;BRANCH_NAME&gt;</span></p>
+                    <p>In order to merge these changes in to your local repository, make sure you have checked out the local branch that you would like to merge the upstream changes into, then use the git merge command. Note that you must specify which branch on the upstream you wish to merge into your currently checked out local branch.</p>
+                    <p><span class="inline-code">git merge upstream/master</span></p>
+                    <h3 class="tldr-content">Alternative Merging Techniques</h3>
+                    <p class="tldr-content">Alternatively, you can bring in changes from the upstream repo in a single command with the following:</p>
+                    <p class="tldr-content"><span class="inline-code">git pull upstream &lt;BRANCH_NAME&gt;</span></p>
+                    <p class="tldr-content">The above is roughly equivalent to the following:</p>
+                    <p class="tldr-content">
+                        <span class="inline-code">git fetch upstream</span>
+                        <br>
+                        <span class="inline-code">git merge upstream/&lt;CURRENT_BRANCH&gt;</span>
+                    </p>
+                    <p class="tldr-content">Note that by using git pull, git will not give you any opportunity to review changes before they are merged in. Unless you are sure that you want to bring in all changes from the upstream repo, the fetch/merge technique should be preferred.</p>
+
+                    <hr>
+
+                    <!-- BRANCHING -->
+                    <h2>Creating a Branch</h2>
+                    <p class="tldr-content">Now that you have cloned a local copy of your forked repo, you should create a new branch where you will make your changes.</p>
+                    <p class="tldr-content">Creating a branch to implement a feature or fix a bug is strongly encouraged because it allows you to experiment without making permanant changes to production codebases.</p>
+                    <p>To create a new branch, use the git branch command:</p>
+                    <p><span class="inline-code">git branch &lt;BRANCH_NAME&gt;</span></p>
+                    <p>After creating the new branch, you can switch to it with git checkout:</p>
+                    <p><span class="inline-code">git checkout &lt;BRANCH_NAME&gt;</span></p>
+                    <p>You can also do both in a single command like so:</p>
+                    <p><span class="inline-code">git checkout -b &lt;BRANCH_NAME&gt;</span></p>
+
+                    <hr>
+
+                    <!-- ADD/COMMIT -->
+                    <h2>Making and Committing Changes</h2>
+                    <p class="tldr-content">After creating and checking out a new branch, you can open up your code editor and begin making changes. Any changes made to files in this folder (including file changes, deletions, and additions) will be tracked by git.</p>
+                    <p>Once you have made changes to a file or files, you have to <span class="inline-code">commit</span> those changes to the repo. Before you can make a commit, you must <span class="inline-code">add</span> the changed file(s) to staging.</p>
+                    <p>Use the <span class="inline-code">git add</span> command to add changed files/directories to staging:</p>
+                    <p><span class="inline-code">git add &lt;FILENAME_OR_DIRECTORY&gt;</span></p>
+                    <p class="tldr-content">Be sure that any changed files or directories that you add to staging are relevant to a single thing. For example, you don't want to fix several bugs, or add several new features, in a single commit because it will be more difficult to roll back, or undo, that commit later. Making small, frequent commits also allows you to make your commit messages concise and specific, which makes it easier for others to understand what the intended result of any single commit is.</p>
+                    <p>You can also add all files in the entire working tree (from the root all the way down) to staging with the <span class="inline-code">-A</span> flag:</p>
+                    <span class="inline-code">git add -A</span>
+                    <p>Once you have added your changes to staging, it's time to commit those changes to the repo:</p>
+                    <p><span class="inline-code">git commit -m "&lt;YOUR_COMMIT_MESSAGE&gt;"</span></p>
+                    <p>You can also bypass the staging process entirely:</p>
+                    <p><span class="inline-code">git commit -a -m "&lt;YOUR_COMMIT_MESSAGE&gt;"</span></p>
+                    <p>The above will automatically add changed files to staging before committing; however, it will <strong>NOT</strong> add newly created or deleted files to the commit.</p>
+
+                    <hr>
+
+                    <!-- Push to remote -->
+                    <h2>Pushing Changes to Remote Repos</h2>
+                    <p class="tldr-content">Before you can issue a pull request to the upstream repository's maintainers, you have to push your local commits to your forked repo on GitHub.</p>
+                    <p>Use the git push command to push commits made on your local branch to your fork.</p>
+                    <p><span class="inline-code">git push origin &lt;BRANCH_NAME&gt;</span></p>
+                    <p class="tldr-content">
+                        Most commonly, the name of the remote that you will be pushing to will be called origin.
+                        If a branch name is not specified, git will attempt to push the current branch onto the remote branch of the same name but will error out if the remote branch does not exist.
+                        If a branch name is specified, git will update the remote branch or create it if it does not exist.
+                    </p>
+
+                    <hr>
+
+                    <!-- Create a PR -->
+                    <h2>Creating a Pull Request</h2>
+                    <p class="tldr-content">You are now ready to issue a pull request from your newly published branch.</p>
+                    <p>To issue a pull request, go to <strong>your</strong> forked repository's page on github.com and click the "New Pull Request" button</p>
+                    <img src="images/pr-button.png" alt="Pull Request button" style="max-width:400px;"><br>
+                    <p class="tldr-content">You may first want to switch branches to the branch you want the pull request applied from. By first switching branches, when creating a new pull request the correct head branch will already be selected for you.</p>
+                    <img src="images/pull-request.png" alt="Pull Request"><br>
+                    <p>When creating a pull request, the base branch is where the changes should be applied to and the head branch is where the changes should be applied from (IE your branch).</p>
+                    <p>After you have selected the appropriate base and head repos and branches, you need to create your commit messages.</p>
+                    <img src="images/pr-comments.png" alt="Pull Request Comments" style="max-width:600px;">
+                    <p class="tldr-content">The first message is the title, it should briefly describe what the pull request should accomplish.</p>
+                    <p class="tldr-content">The second message is where you should be more descriptive about the changes contained in the pull request. You can list files that have been updated, give more detail about what the changes should do, reference or close any issues related to the pull request, etc.</p>
+                    <p class="tldr-content">Many project maintainers will include a template that describes the type of information they expect a pull request to contain before they will merge it in. If the repository conains a file called PULL_REQUEST_TEMPLATE, this will be used when creating new pull requests.</p>
+                    <p>After creating your commit messages, click the "Create Pull Request" button to finish creating the pull request.</p>
+                    <img src="images/create-pr.png" alt="Create Pull Request button" style="max-width:250px;">
+
+                    <hr>
+
+                    <!-- Cleaning Up -->
+                    <h2>Cleaning Up</h2>
+                    <p>If your pull request has been merged in or rejected by the upstream project's maintainers and you do not wish to keep it, you can delete branches with the git branch command.</p>
+                    <p><span class="inline-code">git branch -d &lt;BRANCH_NAME&gt;</span></p>
+                    <p>The above snippet will delete a branch as long as it has been merged in to another branch or error out otherwise. To force delete a branch use the <span class="inline-code">-D</span> flag instead.</p>
+                    <p>Remote branches can also be deleted with the <span class="inline-code">git push</span> command using the <span class="inline-code">-d</span> flag.</p>
+                    <p><span class="inline-code">git push -d &lt;REMOTE_NAME&gt; &lt;BRANCH_NAME&gt;</span></p>
+
+                </div>
+            </article>
+        </div>
+        <footer id="footer">
+            <h1 class="footer-blog-title"><a href="index.html">Free Code Camp - OKC</a></h1>
+            <span class="copyright">&copy; 2017 Free Code Camp - OKC &middot; <a href="https://www.techlahoma.org/code-of-conduct/" target="_blank" title="Code of Conduct" rel="external">Code of Conduct</a></span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        $('i.fa-bars').click(function() {
+            if($('nav.mobile-nav').css('display') == 'block') {
+                $('nav.mobile-nav').slideUp();
+            } else {
+                $('nav.mobile-nav').slideDown();
+            }
+        });
+
+        // TL;DR functionality
+        (function(){
+            // Cache elements
+            var tldrButton = $('.tldr-btn'),
+                elems = $('.tldr-content');
+            // Toggle TL;DR content on click
+            tldrButton.on('click', function tldr(ev){
+                tldrButton.toggleClass('active');
+                elems.slideToggle('fast');
+            });
+        })()
+    </script>
+</body>
+
+</html>
