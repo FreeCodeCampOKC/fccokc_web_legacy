@@ -7,7 +7,7 @@
 <!-- If suggesting a new feature, please open an issue to discuss before submitting a pull request -->
 <!-- Example - "Resolves #1" -->
 Resolves #
-
+<!--Please include the issue number if this pull request if it completes the fix for this issue OR use an Update # for an ongoing issue (instead of 'resolves') requiring future commits -->
 ### Description
 <!-- Describe your changes in detail here, utilize a list to show impacted files where needed -->
 
