@@ -3,8 +3,8 @@
 <!-- Below is a list of items we ask you include with your pull request -->
 
 ## Related Issue
-<!-- Most Pull Request must be related to an issue, please reference the issue # -->
-<!-- If this Pull Request closes and issue please use "Resolves #", if issue an ongoing task please use "Updates #"-->
+<!-- Most Pull Request will be related to an issue, please reference the issue # -->
+<!-- If this Pull Request closes the issue please use "Resolves #", if issue is ongoing please use "Updates #"-->
 <!-- If suggesting a new feature, please open an issue to discuss before submitting a pull request -->
 <!-- Example - "Resolves #1" -->
 
