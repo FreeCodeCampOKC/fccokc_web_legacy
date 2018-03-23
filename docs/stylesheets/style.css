@@ -568,34 +568,50 @@ label h2 {
 #toggle-youtube + label h2::before {
   content: attr(min-icon);
   font-family: "FontAwesome";
+  font-size: .92em;
+  padding-right: 9px;
 }
 #toggle-youtube:checked + label h2::before {
   content: attr(max-icon);
   font-family: "FontAwesome";
+  font-size: 1em;
+  padding-right: 0px;
 }
 #toggle-resources + label h2::before {
   content: attr(min-icon);
   font-family: "FontAwesome";
+    font-size: .92em;
+    padding-right: 9px;
 }
 #toggle-resources:checked + label h2::before {
   content: attr(max-icon);
   font-family: "FontAwesome";
+    font-size: 1em;
+    padding-right: 0px;
 }
 #toggle-tutorials + label h2::before {
   content: attr(min-icon);
   font-family: "FontAwesome";
+    font-size: .92em;
+    padding-right: 9px;
 }
 #toggle-tutorials:checked + label h2::before {
   content: attr(max-icon);
   font-family: "FontAwesome";
+    font-size: 1em;
+    padding-right: 0px;
 }
 #toggle-books + label h2::before {
   content: attr(min-icon);
   font-family: "FontAwesome";
+    font-size: .92em;
+    padding-right: 9px;
 }
 #toggle-books:checked + label h2::before {
   content: attr(max-icon);
   font-family: "FontAwesome";
+    font-size: 1em;
+    padding-right: 0px;
 }
 #container {
   width: 840px;
