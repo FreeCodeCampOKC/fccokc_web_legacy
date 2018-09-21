@@ -252,6 +252,9 @@ _Pvt_Extensions
 # Paket dependency manager
 .paket/paket.exe
 
+#Webstorm IDE files. 
+.idea
+
 # FAKE - F# Make
 .fake/
 .DS_Store
