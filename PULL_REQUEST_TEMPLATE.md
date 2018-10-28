@@ -15,7 +15,7 @@
 
 ### Checklist
 <!-- Please make sure all items are checked before submitting a pull request -->
-<!-- Place a 'x' in the brackets to represent the item as done -->
+<!-- Place an 'x' in the brackets to represent the item as done -->
 - [ ] I have read and understand the **[CODE OF CONDUCT](https://github.com/FreeCodeCampOKC/fccokc_web/blob/master/CODE_OF_CONDUCT.md)**
 - [ ] I have read the **[CONTRIBUTING](https://github.com/FreeCodeCampOKC/fccokc_web/blob/master/CONTRIBUTING.md)** document
 - [ ] My repository is up to date, and merge conflicts have been resolved
