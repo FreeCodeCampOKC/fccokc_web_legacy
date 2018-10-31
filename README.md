@@ -24,4 +24,4 @@ We value your participation and hope that by communicating these expectations wi
 
 ## Acknowledgments
 
-* A big thanks to anyone who's code was used to make this site.
+* A big thanks to anyone whose code was used to make this site.
