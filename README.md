@@ -7,7 +7,6 @@ You can view the website [here](http://www.fccokc.com/).
 
 | Name | Role |
 |---|---|
-| [Daniel Ashcraft](https://github.com/dashcraft)                              | Co-organizer |
 | [Kimberly Collins](https://github.com/kacollins)                             | Co-organizer |
 | [Carson McKinstry](https://github.com/CarsonMckinstry)                       | Co-organizer |
 | [Matt Stubenhofer](https://github.com/mstub)                                 | Contributor  |
