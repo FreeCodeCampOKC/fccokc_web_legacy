@@ -7,8 +7,9 @@ You can view the website [here](http://www.fccokc.com/).
 
 | Name | Role |
 |---|---|
+| [Alex Ayon](https://github.com/alex-code4okc/)                               | Co-organizer |
+| [Chris Tse](https://github.com/chris-tse)                                    | Co-organizer |
 | [Kimberly Collins](https://github.com/kacollins)                             | Co-organizer |
-| [Carson McKinstry](https://github.com/CarsonMckinstry)                       | Co-organizer |
 | [Matt Stubenhofer](https://github.com/mstub)                                 | Contributor  |
 | [Jason Carpenter](https://github.com/Jason9199)                              | Contributor  |
 
