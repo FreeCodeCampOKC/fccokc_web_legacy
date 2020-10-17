@@ -107,7 +107,7 @@
             });
             $("#footer-year").text(new Date().getFullYear());
 
-            fetch("/docs/scripts/people.json")
+            fetch("/scripts/people.json")
                 .then((res) => res.json())
                 .then((data) => {
                     var peopleJSON = data.people;
