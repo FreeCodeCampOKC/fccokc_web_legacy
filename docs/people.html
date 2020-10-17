@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Free Code Camp - OKC</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content="Free Code Camp - OKC is a group for those who want to learn to code in the Oklahoma City area.  We meet at StarSpace46 every Sunday."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Free Code Camp - OKC" />
+        <meta property="og:url" content="http://freecodecampokc.org/" />
+        <meta property="og:site_name" content="Free Code Camp - OKC" />
+        <meta
+            property="og:description"
+            content="Free Code Camp - OKC is a group for those who want to learn to code in the Oklahoma City area.  We meet at StarSpace46 every Sunday."
+        />
+        <meta property="og:updated_time" content="2017-03-08T09:45:28.000Z" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="FreeCodeCampOKC" />
+        <meta
+            name="twitter:description"
+            content="Free Code Camp - OKC is a group for those who want to learn to code in the Oklahoma City area.  We meet at StarSpace46 every Sunday."
+        />
+        <link
+            rel="shortcut icon"
+            href="images/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="./stylesheets/style.css" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            type="text/css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map"
+            type="text/css"
+        />
+    </head>
+
+    <body>
+        <div id="container">
+            <div class="mobile-nav-panel">
+                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            </div>
+            <div class="mobile-nav-panel">
+                <nav class="nav mobile-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="twitch.html">Twitch</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <header id="header">
+                <h1 class="blog-title">
+                    <a href="index.html">Free Code Camp - OKC</a>
+                </h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="twitch.html">Twitch</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="main">
+                <h1 class="page-heading">Techlahoma Hall of Fame</h1>
+            </main>
+            <footer id="footer">
+                <h1 class="footer-blog-title">
+                    <a href="index.html">Free Code Camp - OKC</a>
+                </h1>
+                <span class="copyright"
+                    >&copy; <span id="footer-year"></span> Free Code Camp - OKC
+                    &middot;
+                    <a
+                        href="https://www.techlahoma.org/code-of-conduct/"
+                        target="_blank"
+                        title="Code of Conduct"
+                        rel="external"
+                        >Code of Conduct</a
+                    ></span
+                >
+            </footer>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            $("i.fa-bars").click(function () {
+                if ($("nav.mobile-nav").css("display") == "block") {
+                    $("nav.mobile-nav").slideUp();
+                } else {
+                    $("nav.mobile-nav").slideDown();
+                }
+            });
+            $("#footer-year").text(new Date().getFullYear());
+
+            fetch("/docs/scripts/people.json")
+                .then((res) => res.json())
+                .then((data) => {
+                    var peopleJSON = data.people;
+                    for (let person of peopleJSON) {
+                        var personCard = document.createElement("div");
+                        personCard.className = "person-card";
+
+                        var personName = document.createElement("h2");
+                        personName.textContent = person.name;
+                        personCard.append(personName);
+                        var personBio = document.createElement("p");
+                        personBio.textContent = person.bio;
+                        personCard.append(personBio);
+
+                        var personFooter = document.createElement("footer");
+                        person.contact.forEach((contact) => {
+                            if (!contact.link) {
+                                var contactString = document.createElement("p");
+                                contactString.textContent = `${contact.text}: ${contact.url}`;
+                                personFooter.append(contactString);
+                                return;
+                            }
+                            var contactLinkWrapper = document.createElement(
+                                "p"
+                            );
+
+                            var contactLink = document.createElement("a");
+                            contactLink.href = contact.url;
+                            contactLink.textContent = contact.text;
+                            contactLinkWrapper.append(contactLink);
+                            personFooter.append(contactLinkWrapper);
+                        });
+
+                        personCard.append(personFooter);
+                        //last line
+                        $("main").append(personCard);
+                    }
+                });
+        </script>
+    </body>
+</html>
