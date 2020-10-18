@@ -1389,6 +1389,7 @@ img.slack-images {
     padding: 15px;
     border: 1px solid grey;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .person-card h2 {
@@ -1412,4 +1413,5 @@ img.slack-images {
 
 .page-heading {
     font-size: 32px;
+    margin-bottom: 15px;
 }
