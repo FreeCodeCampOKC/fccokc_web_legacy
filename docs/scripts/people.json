@@ -20,6 +20,27 @@
                 }
             ],
             "bio": "FreeCodeCampOK co-organizer. Software Engineer at Anautics. California raised. UCSC Alum, go Slugs!"
+        },
+        {
+            "name": "Chris Tse",
+            "contact": [
+                {
+                    "text": "Twitter",
+                    "url": "https://twitter.com/ChrisMTse",
+                    "link": true
+                },
+                {
+                    "text": "Github",
+                    "url": "https://github.com/chris-tse",
+                    "link": true
+                },
+                {
+                    "text": "Slack",
+                    "url": "@Chris Tse",
+                    "link": false
+                }
+            ],
+            "bio": "FreeCodeCampOK co-organizer. Software Engineer at Oracle. Big fan of anime, mechanical keyboards, and PC building."
         }
     ]
 }
