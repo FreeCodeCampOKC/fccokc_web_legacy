@@ -41,6 +41,27 @@
                 }
             ],
             "bio": "FreeCodeCampOK co-organizer. Software Engineer at Oracle. Big fan of anime, mechanical keyboards, and PC building."
+        },
+        {
+            "name": "Tanner Smith",
+            "contact": [
+                {
+                    "text": "Twitter",
+                    "url": "https://twitter.com/tsmithdev",
+                    "link": true
+                },
+                {
+                    "text": "Github",
+                    "url": "https://github.com/stephentannersmith",
+                    "link": true
+                },
+                {
+                    "text": "Slack",
+                    "url": "@Tanner Smith",
+                    "link": false
+                }
+            ],
+            "bio": "Bootcamp graduate and self taught programmer. Software Engineer at Drov Technologies. I make music and practice yoga :)"
         }
     ]
 }
