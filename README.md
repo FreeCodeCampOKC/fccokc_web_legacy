@@ -1,7 +1,7 @@
-# Free Code Camp, Oklahoma City Website
+# freeCodeCamp Oklahoma Website
 
 A static website cloned from codeforokc, for the Oklahoma city branch of Free Code Camp. Our aim is to teach programming in; HTML, CSS and JavaScript for free.
-You can view the website [here](http://www.fccokc.com/).
+You can view the website [here](https://www.fccokc.com/).
 
 ## The team
 
