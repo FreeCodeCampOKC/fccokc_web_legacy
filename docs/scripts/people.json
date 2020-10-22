@@ -62,6 +62,27 @@
                 }
             ],
             "bio": "Bootcamp graduate and self taught programmer. Software Engineer at Drov Technologies. I make music and practice yoga :)"
+        },
+        {
+            "name": "Andre Butler",
+            "contact": [
+                {
+                    "text": "Twitter",
+                    "url": "https://twitter.com/OK20171",
+                    "link": true
+                },
+                {
+                    "text": "Github",
+                    "url": "https://github.com/abutler6588",
+                    "link": true
+                },
+                {
+                    "text": "Slack",
+                    "url": "@Andre Butler",
+                    "link": false
+                }
+            ],
+            "bio": "Front-end Software Engineer. 🧑🏾‍💻 Always learning. 📕 Passionate about using tech to elevate people and build community. ✊🏿"
         }
     ]
 }
